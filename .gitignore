@@ -1,0 +1,11 @@
+./img*
+img*
+*.aux
+*.bbl
+*.blg
+*.out
+*.log
+*.lot
+*.toc
+*.pdf
+.DS_Store
