@@ -1,10 +1,12 @@
 \documentclass[nofonts,nols,justified,nobib]{tufte-handout} 
 \usepackage{graphicx} 
 \setcounter{secnumdepth}{3}
-\setcaptionfont{\footnotesize} %add \sffamily for helvetica, \itshape for italic
 \usepackage{titlesec}
 \usepackage{hyperref}
 \usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{compatibility=false, font=footnotesize}
+\captionsetup[subfigure]{labelfont=bf,singlelinecheck=off,labelsep = space}
 \setcounter{tocdepth}{3}
 % \def\xcontentsline#1#2#3{\@ifnextchar\contentsline 
 %   {\contentsline{#1}{#2}{#3}{}{}}{}} 
@@ -23,6 +25,9 @@
   []% after the title body
 
 \DeclareUnicodeCharacter{2028}{} 
+
+\setlength{\belowcaptionskip}{10pt} % Chosen fairly arbitrarily
+\setcaptionfont{\footnotesize} %add \sffamily for helvetica, \itshape for italic
 
 \begin{document}
 
@@ -86,12 +91,12 @@ Ultimately, the convenience and apparent seamlessness of single-stream recycling
 
 \begin{marginfigure}
 \includegraphics[width=\textwidth]{img/1/envac.jpg}
-\caption{``Bins, but not as you know them'' -- a graphic from Envac's website\label{b}}
+\caption{``Bins, but not as you know them'' -- a graphic from Envac's website\label{b} \cite{envac_smart_nodate}}
 \end{marginfigure}
 
-This is not to say, of course, that it is not important to build technologies that deal with our waste as cleanly and efficiently as possible (particularly for the sake of people working with them). However, a distinction between efficiency (in an energetic sense) and convenience is necessary: friction, such as needing to sort recycling or walk further to a bin can be a positive force. This is not a concept unique to waste systems: for example, in the current context of fake news and social media overuse, the concept of a `good friction' (and variants thereof) are often cited as ways by which we might negotiate a healthier relationship with the internet \cite{donath}.
+This is not to say, of course, that it is not important to build technologies that deal with our waste as cleanly and efficiently as possible (particularly for the sake of people working with them). However, a distinction between efficiency (in an energetic sense) and convenience is necessary: friction, such as needing to sort recycling or walk further to a bin can be a positive force. This is not a concept unique to waste systems: for example, in the current context of fake news and social media overuse, the concept of a `good friction' (and variants thereof) are often cited as ways by which we might negotiate a healthier relationship with the internet \cite{donath_signals_2011, tufekci_twitter_2017}.
 
-This work is grounded in a broader question: how does our understanding of infrastructure shape our actions within complex civic systems? In his book Waste is Information, Dietmar Offenhuber makes central the notion that ``infrastructure governance is enacted through the representations of the infrastructural system'' \cite{offenhuber_waste_2017}. There is a tendency in the design of infrastructure to obscure the `hard parts': be they human labour, piles of trash, server farms or fibre-optic cables. We make custodial workers come in late at night, export our waste to where we can't see it, and bury the mounds of cable, silicon and glass that we use to support our `connected' lives underground. Not only is the direct effect on the affected communities and ecosystems (those without the option to hide the real effects of these infrastructures) harmful \cite{liborion_why_2014}, but in making these processes `like magic' we also remove a sense of collective responsibility for them.
+This work is grounded in a broader question: how does our understanding of infrastructure shape our actions within complex civic systems? In his book Waste is Information, Dietmar Offenhuber makes central the notion that ``infrastructure governance is enacted through the representations of the infrastructural system'' \cite{offenhuber_waste_2017}. There is a tendency in the design of infrastructure to obscure the `hard parts': be they human labour, piles of trash, server farms or fibre-optic cables. We make custodial workers come in late at night, export our waste to where we can't see it, and bury the mounds of cable, silicon and glass that we use to support our `connected' lives underground. Not only is the direct effect on the affected communities and ecosystems (those without the option to hide the real effects of these infrastructures) harmful \cite{liboiron_why_2014}, but in making these processes `like magic' we also remove a sense of collective responsibility for them.
 
 \begin{flushright}
 \begin{minipage}[b]{0.8\textwidth}
@@ -114,7 +119,7 @@ In his 1990 book Wasting Away\cite{lynch_wasting_1990}, urbanist Kevin Lynch wri
 \caption{Comparing an image of the waste system to its manifestation. \cite{liboiron_why_2014} \label{b}}
 \end{marginfigure}
 
-Max Liborion argues that our imagination of waste is necessarily limited to a small component of a much larger system: one that encompasses not just our empirical experience of wasting (e.g. disposal, compost and recycling) but also a much broader range of social, economic and environmental effects \cite{liboiron_mapping_2014, liborion_why_2014}. Liborion also decries the common representation of waste as a behavioural problem, arguing that given that industrial waste comprises a far greater proportion of global waste streams than municipal waste, it is structural rather than social change that is needed \cite{liborion_against_2014}. In reference to overly-emotive recycling campaigns, Gay Hawkins remarks that ``Our imaginations are overflowing with the horror of waste'', a horror that is as paralysing as it is counter-productive \cite{hawkins_ethics_2006}.
+Max Liboiron argues that our imagination of waste is necessarily limited to a small component of a much larger system: one that encompasses not just our empirical experience of wasting (e.g. disposal, compost and recycling) but also a much broader range of social, economic and environmental effects \cite{liboiron_mapping_2014, liboiron_why_2014}. Liboiron also decries the common representation of waste as a behavioural problem, arguing that given that industrial waste comprises a far greater proportion of global waste streams than municipal waste, it is structural rather than social change that is needed \cite{liboiron_against_2014}. In reference to overly-emotive recycling campaigns, Gay Hawkins remarks that ``Our imaginations are overflowing with the horror of waste'', a horror that is as paralysing as it is counter-productive \cite{hawkins_ethics_2006}.
 
 %%IMAGE TO ADD: emotive recycling campaign
 
@@ -135,12 +140,12 @@ Homer Simpson, ``Trash of the Titans``
 
 \subsection{Maintenance Art}
 
-Maintenance art gives us a means to look not only at waste, but also those tasked with its disposal, and associated forms of work: garbage collection, street cleaning, sanitation work, sorting recycling. The term originates from Mierle Ukeles'  `manifesto for maintenance art 1969'\cite{ukeles_manifesto_1969}, a feminist critique of what she calls the `avant-garde death instinct' of technological progress, in which she re-figures the work of cleaning and repair as an artwork in itself. Ukeles uses the museum as a vehicle to confront people with waste and the people who handle it: for her piece `Touch Sanitation Performance' (made as the artist in residence at the New York department of Sanitation), she spent a year shaking the hand of each of the 8,500 New York Sanitation workers who would accept the offer.\cite{ukeles_touch_1970}
+Maintenance art gives us a means to look not only at waste, but also those tasked with its disposal, and associated forms of work: garbage collection, street cleaning, sanitation work, sorting recycling. The term originates from Mierle Ukeles'  `manifesto for maintenance art 1969'\cite{ukeles_manifesto_1969}, a feminist critique of what she calls the `avant-garde death instinct' of technological progress, in which she re-figures the work of cleaning and repair as an artwork in itself. Ukeles uses the museum as a vehicle to confront people with waste and the people who handle it: for her piece `Touch Sanitation Performance' (made as the artist in residence at the New York department of Sanitation), she spent a year shaking the hand of each of the 8,500 New York Sanitation workers who would accept the offer.\cite{ukeles_touch_1980}
 
 \begin{marginfigure}
 \includegraphics[width=\textwidth]{img/1/touch-sanitation.png}
 \caption{A shot from Touch Sanitation Performance \label{b}}
-\cite{ukeles_touch_1970} 
+\cite{ukeles_touch_1980} 
 \end{marginfigure}
 
 
@@ -152,11 +157,11 @@ Maintenance art forces the viewer to confront realities that are abject, guilt-i
 
 \subsection{Infrastructure legibility}
 
-The term infrastructure legibility was coined by Dietmar Offenhuber in his book Waste Is Information \cite{offenhuber_waste_2017}, to refer to the problem of representing civic infrastructures too complex to be understood in their entirety. This is an idea that draws heavily from Lynch, who defines the ``legibility'' of a system as ``the ease with which its parts can be recognised and can be organised into a coherent pattern``. 
+The term infrastructure legibility was coined by Dietmar Offenhuber in his book Waste Is Information \cite{offenhuber_waste_2017}, to refer to the problem of representing civic infrastructures too complex to be understood in their entirety. This is an idea that draws heavily from Lynch, who defines the ``legibility'' of a system as ``the ease with which its parts can be recognised and can be organised into a coherent pattern''. 
 
 %%IMAGE TO ADD: sim city
 
-There is, of course, a tension between creating a legible representation, and over-simplifying a narrative. It is also worth asking: for whom is a system being made legible? As James C. Scott observes in Seeing Like a State, it is by simplifying and `rationalising' populations that states might exert undue power over their citizens \cite{scott_seeing_1999}. Representations can also inherently encode the assumptions or biases of the author: for example, Ava Kofman notes that the `advice' in SimCity 4's manual (itself heavily based on Forrester's Urban Dynamics) coerces a particular political viewpoint \cite{kofman_les_2014}. As one player put it in an interview with Los Angeles Times in 1992 ``I became a total Republican playing this game. All I wanted was for my city to grow, grow, grow.''\cite{Baker_model_2019}
+There is, of course, a tension between creating a legible representation, and over-simplifying a narrative. It is also worth asking: for whom is a system being made legible? As James C. Scott observes in Seeing Like a State, it is by simplifying and `rationalising' populations that states might exert undue power over their citizens \cite{scott_seeing_1998}. Representations can also inherently encode the assumptions or biases of the author: for example, Ava Kofman notes that the `advice' in SimCity 4's manual (itself heavily based on Forrester's Urban Dynamics) coerces a particular political viewpoint \cite{kofman_les_2014}. As one player put it in an interview with Los Angeles Times in 1992 ``I became a total Republican playing this game. All I wanted was for my city to grow, grow, grow.''\cite{Baker_model_2019}
 
 %%IMAGE TO ADD:a brighter idea
 
@@ -165,13 +170,13 @@ Bret Victor's essay Explorable Explanations goes some way towards addressing the
 
 \subsection{Systems Dynamics}
 
-The figuring of urban infrastructures as information systems dates back to the 1960s, where Jay Forrester (who had founded the field of Systems Dynamics a decade before) worked with former mayor of Boston John F. Collins, to produce the book Urban Dynamics. The main thesis of this work is that, in considering cities, organisations or even countries as feedback systems, one can glean powerful and counter-intuitive insights. This form of analysis has been used to generate simulations of effects including segregation \cite{schelling}, resource acquisition \cite{axtell}, and gentrification \cite{batty}. The use of these models in urban planning is not without controversy: a common criticism is that the information they impart is highly abstracted, and can encode the biases of the modeller: it is one thing to use simulations to understand a dynamic in an urban system, and another to use them build cities anew.
+The figuring of urban infrastructures as information systems dates back to the 1960s, where Jay Forrester (who had founded the field of Systems Dynamics a decade before) worked with former mayor of Boston John F. Collins, to produce the book Urban Dynamics. The main thesis of this work is that, in considering cities, organisations or even countries as feedback systems, one can glean powerful and counter-intuitive insights. This form of analysis has been used to generate simulations of effects including segregation \cite{schelling_dynamic_1971}, resource acquisition \cite{epstein_growing_1996-1}, and gentrification \cite{batty_new_2013}. The use of these models in urban planning is not without controversy: a common criticism is that the information they impart is highly abstracted, and can encode the biases of the modeller: it is one thing to use simulations to understand a dynamic in an urban system, and another to use them build cities anew.
 
 %%IMAGE TO ADD: agent based models
 
 In `Leverage Points: Places to Intervene in a System', Donella Meadows enumerates the effectiveness of 12 different `sites of intervention' in a system, noting that often (particularly in public, political and civic systems), it is the least effective forms of intervention (numbers and constants) that receive the greatest deal of attention \cite{meadows_leverage_1997}. Meadows also emphasises the effectiveness of the information feedback loop (6), citing a study where a group of houses with a electricity meter installed by the door used 30\% less energy than an identical group where the meter was in the basement. Perhaps, if we took our refuse to the dump daily, or spent time regularly with the workers who clean our office buildings by night, we might have a different attitude to our waste. 
 
-In this analysis, however it is important to acknowledge that the greatest changes to be made are often structural. Just as Max Liborion points out, in her essay `Against Awareness, for Scale: Garbage is Infrastructure Not Behaviour', the agency of the individual in the system is limited by the goals, politics and dynamics of waste systems themselves. In the U.S., where around 98\% of waste is industrial (rather than municipal)\cite{liborion_against_2014}, and it can use more energy to rinse a glass bottle in order to recycle it than it does to throw it away \cite{tierney_reign_2018}, it would be irresponsible to advocate for any change of behaviour without acknowledging the broader infrastructure at work.
+In this analysis, however it is important to acknowledge that the greatest changes to be made are often structural. Just as Max Liboiron points out, in her essay `Against Awareness, for Scale: Garbage is Infrastructure Not Behaviour', the agency of the individual in the system is limited by the goals, politics and dynamics of waste systems themselves. In the U.S., where around 98\% of waste is industrial (rather than municipal)\cite{liboiron_against_2014}, and it can use more energy to rinse a glass bottle in order to recycle it than it does to throw it away \cite{tierney_reign_2018}, it would be irresponsible to advocate for any change of behaviour without acknowledging the broader infrastructure at work.
 
 \subsection{Waste as a complex system}
 
@@ -187,7 +192,7 @@ Mary Douglas
 
 
 
-Equally, however, it would be defeatist (and inaccurate) to insist that one has no leverage over waste systems. Liborion argues that `even if individual actions don't save the world, they are expressions of an ethic that can lead to other actions that do scale.'\cite{liborion_against_2014} This is a difference that might be characterised by the concepts from political science of internal vs external efficacy: an internal efficacy is the notion that one understands a system and can participate in it, whereas an external efficacy is a feeling of control over that system. Much as political campaigners (for the most part) do not possess any great power to make governments respond to their demands, they can still be effective as individuals with high internal efficacy \cite{zuckerman_mobilizing_2019}.
+Equally, however, it would be defeatist (and inaccurate) to insist that one has no leverage over waste systems. Liboiron argues that `even if individual actions don't save the world, they are expressions of an ethic that can lead to other actions that do scale.'\cite{liboiron_against_2014} This is a difference that might be characterised by the concepts from political science of internal vs external efficacy: an internal efficacy is the notion that one understands a system and can participate in it, whereas an external efficacy is a feeling of control over that system. Much as political campaigners (for the most part) do not possess any great power to make governments respond to their demands, they can still be effective as individuals with high internal efficacy \cite{zuckerman_mobilizing_2019}.
 
 An example of a scaling action is that of recycling contamination. Recycling contamination is a huge contemporary issue, as it not only results in a high volume of otherwise good recycling diverted to landfill, but, if not caught, a single contaminated bag can cause an entire truck to be turned away at the recycling plant, a costly and wasteful error. Further down the line, China (a key importer of recycling) will reject any received shipment deemed to be greater than 0.5\% impure; ships containing contaminated loads turn back around, and head to landfill. \cite{albeck-ripka_your_2018}. Tackling contamination requires action at the level of the individual, both in showing more care when disposing of waste (to avoid obvious contaminants such as food waste), and in maintaining awareness of what can and cannot be recycled. Livia Albeck-Ripka of the New York Times identifies a set of behaviours around the second as `aspirational recycling' \cite{albeck-ripka_6_2018}: wanting to believe that objects can be recycled (such as coffee cups, greasy boxes, food-filled containers) that are in reality contaminants. 
 
@@ -209,17 +214,16 @@ It is through taking such a systems perspective on waste that we might participa
 % \end{minipage}
 \end{flushright}
 
-Since around the 1970's (which marked the passing of the Resource Conservation and Recovery Act in the United States), the problem of municipal waste has been linked both to personal responsibility, and to an environmental cause. At present, the minimisation of municipal solid waste is broadly framed as a co-operative problem in which we are all expected to play a role. Interventions into waste streams can take place at the site of production (for example, minimising wastes created by industrial processes and logistics), the site of consumption (encouraging consumers to buy less, or reuse), and the site of disposal (recycle, compost). As has been observed by Liborion \cite{liborion_against_2014}, when it comes to civic education, focus tends toward changing habits of disposal, despite its relative ineffectiveness when compared to consumption, or changing the industrial context in the first place. The `waste hierarchy' model is often used to illustrate relative merits of different diversion strategies, distinguishing between Reduction, Reuse, Recycling and Recovery.
+Since around the 1970's (which marked the passing of the Resource Conservation and Recovery Act in the United States), the problem of municipal waste has been linked both to personal responsibility, and to an environmental cause. At present, the minimisation of municipal solid waste is broadly framed as a co-operative problem in which we are all expected to play a role. Interventions into waste streams can take place at the site of production (for example, minimising wastes created by industrial processes and logistics), the site of consumption (encouraging consumers to buy less, or reuse), and the site of disposal (recycle, compost). As has been observed by Liboiron \cite{liboiron_against_2014}, when it comes to civic education, focus tends toward changing habits of disposal, despite its relative ineffectiveness when compared to consumption, or changing the industrial context in the first place. The `waste hierarchy' model is often used to illustrate relative merits of different diversion strategies, distinguishing between Reduction, Reuse, Recycling and Recovery.
 
 
 \begin{marginfigure}
 \includegraphics[width=\textwidth]{img/2/recycling-hierarchy.png}
-\caption{A shot from Touch Sanitation Performance\label{b}}
-\cite{ukeles_touch_1970} 
+\caption{Waste hierarchy diagram\label{b}}
 \end{marginfigure}
 
 
-In municipal waste systems, efforts to `change the way we waste' typically involve some form of behaviour or attitudinal change on the part of the citizen, even if that change is unconscious or involuntary. For example, in Max Liborion's description of her intervention in Columbia University, while it involved no `awareness' campaign whatsoever, plastic bottles were reduced simply by removing their availability and providing for re-usable bottles, a shift in infrastructure leading to a change in habit. \cite{liborion_against_2014}
+In municipal waste systems, efforts to `change the way we waste' typically involve some form of behaviour or attitudinal change on the part of the citizen, even if that change is unconscious or involuntary. For example, in Max Liboiron's description of her intervention in Columbia University, while it involved no `awareness' campaign whatsoever, plastic bottles were reduced simply by removing their availability and providing for re-usable bottles, a shift in infrastructure leading to a change in habit. \cite{liboiron_against_2014}
 
 \subsection{Zero Waste}
 
@@ -255,7 +259,7 @@ From a social psychology perspective, \cite{stern_managing_1987}, Stern and Oska
 \cite{stern_managing_1987}
 \end{marginfigure}
 
-Kline \cite{Kline_rationalizing_1988} summarises the issue: ``We would not expect individuals to engage in conservation behaviour when... personal action is not felt to contribute to the amelioration of a social problem, when the expected behaviour is regarded as cumbersome, inconvenient and ineffective, or when others who are similarly expected to conserve are perceived as not doing so``.
+Kline \cite{Kline_rationalizing_1988} summarises the issue: ``We would not expect individuals to engage in conservation behaviour when... personal action is not felt to contribute to the amelioration of a social problem, when the expected behaviour is regarded as cumbersome, inconvenient and ineffective, or when others who are similarly expected to conserve are perceived as not doing so''.
 
 %IMAGE TO ADD: hornik model
 
@@ -285,7 +289,7 @@ In Waste is Information, Offenhuber examines the role of interfaces between citi
 
 %IMAGE TO ADD: trash track
 
-In 2009 Offenhuber worked on MIT Senseable City Lab's Trash Track project \cite{ratti_trash_2009}, which used a set of GPS sensors to track the movement of different kinds of waste emanating from the city of Seattle. This project provided a detailed insight into the variety of destinations reached, routes and time taken to get there, as well as an analysis of how effectively the different kinds of waste were being dealt with. However, while contributing new knowledge, and defying popular misconceptions about waste \cite{liborion_mapping_2014}, these visualisations stop a little short of asking the viewer to take responsibility for their role within a system. As `views from nowhere', they do not include the viewer themselves, allowing one to dissociate the movement of this waste from one's own role within the system of its production.
+In 2009 Offenhuber worked on MIT Senseable City Lab's Trash Track project \cite{ratti_trash_2009}, which used a set of GPS sensors to track the movement of different kinds of waste emanating from the city of Seattle. This project provided a detailed insight into the variety of destinations reached, routes and time taken to get there, as well as an analysis of how effectively the different kinds of waste were being dealt with. However, while contributing new knowledge, and defying popular misconceptions about waste \cite{liboiron_mapping_2014}, these visualisations stop a little short of asking the viewer to take responsibility for their role within a system. As `views from nowhere', they do not include the viewer themselves, allowing one to dissociate the movement of this waste from one's own role within the system of its production.
 
 %%needs revising!!
 
@@ -303,7 +307,7 @@ John Sterman
 \begin{flushright}
 % \begin{minipage}[b]{0.8\textwidth}
 \begin{flushright}
-\emph{``Games are the pop cultural medium of systems. When we play a game, we interact with a dynamic system and we learn to think and act in systems. Many scholars and learning theorists have identified ``systems thinking'' as one of the more important strategies for connecting knowledge to action.''}\cite{macklin}\\
+\emph{``Games are the pop cultural medium of systems. When we play a game, we interact with a dynamic system and we learn to think and act in systems. Many scholars and learning theorists have identified ``systems thinking'' as one of the more important strategies for connecting knowledge to action.''}\cite{macklin_games_2013}\\
 Coleen Macklin
 \end{flushright}
 % \end{minipage}
@@ -351,7 +355,7 @@ In 2015, the MIT Campus Sustainability Working Group published a set of guidelin
 
 \subsection{Material Flows}
 
-Over the past decade, the Institute has seen a steady year-on-year rise in the number of packages processed by the mail room, a factor thought to significantly impact the volume of material flow into departments like the Media Lab. The Office of Sustainability emphasis subtlety when addressing the Institute's material consumption. As Brian Goldberg (MITOS) puts it: ``we don't want to tell people `don't buy things'... because they just won't do that. Instead, think about the impact, positive and negative, that the things you buy are having``. Shipping a product might negatively impact the environment, but if that product is being used to further good research, it might be a net positive impact.
+Over the past decade, the Institute has seen a steady year-on-year rise in the number of packages processed by the mail room, a factor thought to significantly impact the volume of material flow into departments like the Media Lab. The Office of Sustainability emphasis subtlety when addressing the Institute's material consumption. As Brian Goldberg (MITOS) puts it: ``we don't want to tell people `don't buy things'... because they just won't do that. Instead, think about the impact, positive and negative, that the things you buy are having''. Shipping a product might negatively impact the environment, but if that product is being used to further good research, it might be a net positive impact.
 Rachel Perlman, a student in the Institute for Data, Systems and Society and organiser with MIT's Waste Alliance cites a lack of centralised data on purchasing as a major factor in understanding material flows through the institute. With research groups using separate accounts across multiple platforms to handle purchases, it is hard to make or enforce policy guidelines. In her work, she advocates for a bottom-up approach to understanding waste systems: going first from audits of waste streams, rather than attempting to control for a higher-level approach. \cite{perlman_material_2016}. Perlman uses ecological metaphors such as `urban metabolism' to describe the consumption and production of waste at MIT, and takes a heavily systems-oriented approach in describing possible interventions.
 
 
@@ -359,7 +363,7 @@ Rachel Perlman, a student in the Institute for Data, Systems and Society and org
 
 The Zero Waste initiative at MIT is led by the Office for Sustainability in conjunction with the Office for Recycling and Materials Management, Custodial Services, Bootstrap Compost and Enevo waste management. This is a year-long experiment (academic year 2018-19), which will seek -- as a baseline -- to divert 90\% of waste by volume from landfill, directing it instead to recycling and compost. The first stage of this scheme was an audit of the lab's solid waste streams in November 2018, which found that approximately 50\% of the Media Lab's waste is recycled or composted, though within that, around a third of the recycling is contaminated, bringing the total waste diverted from landfill to a much lower 36\% (Goldberg, 2018). By volume, around 25\% of the materials recovered from the recycling during the audit were non-recyclable. In addition, much of the waste ending up in the trash is food waste, which could instead be composted.
 
-One of the main causes of recycling contamination on campus is due to food waste entering the recycling stream \cite{Goldberg_2018}, though harder to spot are contaminants such as black plastics, coffee cups, plastic utensils, and styrofoam, items which students and staff are often unsure whether they can be recycled. Currently, contaminants are identified by custodians inspecting bags from the outside; if a bag is seen to contain a contaminant, it is placed straight in landfill.
+One of the main causes of recycling contamination on campus is due to food waste entering the recycling stream, though harder to spot are contaminants such as black plastics, coffee cups, plastic utensils, and styrofoam, items which students and staff are often unsure whether they can be recycled. Currently, contaminants are identified by custodians inspecting bags from the outside; if a bag is seen to contain a contaminant, it is placed straight in landfill.
 To address issues of contamination, a 3-month pilot scheme has been conducted between select (and isolated) areas of the lab: the 2nd floor (including offices, the mezzanine level of the workshop, and 2 research groups), and selected office areas of the 4th floor. The aim of this scheme was to examine whether a combination of education (around recycling, composting, and best purchasing practices), and infrastructural change can advance the zero waste goal of the overall scheme. The infrastructural changes proposed by the scheme are to unify and centralise the waste disposal locations for all of the participating offices. 
 
 Thus far, I have been present at pilot meetings since December of this year, and have attended and helped to facilitate the workshops run for participants in the scheme. This thesis project is being conducted in the context of the educational and outreach part of this pilot, though for the sake of establishing a reliable `control', the evaluation of work developed for this thesis also involves groups not directly included in the pilot scheme. Results from both the pilot, and from these separate studies will inform the roll-out of this program to the wider MIT campus. 
@@ -478,9 +482,37 @@ Throughout development of the game, the player was given control over governance
 
 \subsection{Prototyping Systems}
 
-To prototype the game mechanics, I used a systems simulation tool designed by Nicky Case called Loopy \cite{case_loopy_2017}, which allows for the emergent behaviour of multiple different interlinked variables to be modelled. This allowed rapid iteration on different arrangements of variables and starting conditions, and showed some of the possible `end states' of the game. In particular, I was interested in producing compelling and unexpected narratives that would allow a broad space of possible outcomes.
+To prototype the game mechanics, I used a systems simulation tool designed by Nicky Case called Loopy \cite{case_loopy!_2017}, which allows for the emergent behaviour of multiple different interlinked variables to be modelled. This allowed rapid iteration on different arrangements of variables and starting conditions, and showed some of the possible `end states' of the game. In particular, I was interested in producing compelling and unexpected narratives that would allow a broad space of possible outcomes.
 
 Loopy, described by Case as a `tool for thinking in systems' uses the block-and-arrow notation of feedback systems to indicate positive and negative relationships between variables. The length of an arrow between two blocks indicates a time delay in feedback, and the size of the circle inside each block indicates the `stable' initial value. The system is then simulated by perturbing one of these variables from this initial stable state (up or down), and observing the emergent behaviour resulting.
+
+\subsection{Initial Experiments}
+
+\begin{figure*}
+  \centering
+  \caption{Initial Experiments with \emph{Loopy!}}
+  \label{optimising}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{img/3/loopy/small-static.png}
+\caption{\textit{Initial system, static}}
+\end{subfigure}
+ \quad
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{img/3/loopy/small-win.png}
+\caption{\textit{Winning the game}}
+  \label{small:win}
+\end{subfigure}%
+\quad
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{img/3/loopy/small-lose.png}
+  \caption{\textit{Losing the game}}
+  \label{small:lose}
+\end{subfigure}% 
+\end{figure*}
+\vspace{0.8cm}
 
 The first experiment with Loopy was to produce a `virtuous closed loop': a simple feedback loop that modelled a fairly simple relationship between recycling budget, bins, staff, and quality. Here, the blocks are colour coded to show external variables (orange), controllable policies (red), behaviours (green), and outcomes (blue). In this case, an initial increase in recycling staff produces the diagram on the far right, where there are large numbers of happy staff, quality is high, and recycling costs are low (yay!). Alternatively, the diagram in the centre shows the result of an initial reduction in staff numbers: death, destruction, and extremely costly recycling. This is obviously a simplistic model, but even tweaking variables during the simulation can produce interesting, dynamic and chaotic behaviours.
 
@@ -489,7 +521,31 @@ The first experiment with Loopy was to produce a `virtuous closed loop': a simpl
 
 The next model created incorporated a much larger number of variables, to better describe the interactions between the waste system and campus as a whole. Incorporating ideas from the interviews such as space and stress, and a comparison between landfill waste and recycling. By playing with feedback dynamics (such as the delay between hiring new staff, and having to pay them, and the effects of the space on stress), a more complex simulation is achieved. However, there are still issues of `virtuous player syndrome' -- the simulation still succeeds if you install enough staff. As this development of the game progressed, Loopy became less useful to account for more specific, nonlinear relationships between variables. For example, set monthly budgets limit the number of staff you can add, and make trade-offs with other variables in the simulation.
 
-
+\begin{figure*}
+  \centering
+  \caption{Developing a more complex approach}
+  \label{optimising}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{img/3/loopy/big-static.png}
+\caption{\textit{Initial system, static}}
+\end{subfigure}
+ \quad
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{img/3/loopy/big-win.png}
+\caption{\textit{Winning the game}}
+  \label{small:win}
+\end{subfigure}%
+\quad
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{img/3/loopy/big-lose.png}
+  \caption{\textit{Losing the game}}
+  \label{small:lose}
+\end{subfigure}% 
+\end{figure*}
+\vspace{0.8cm}
 
 \subsection{Narrative Aspects}
 
@@ -497,7 +553,7 @@ In order to give the game a narrative form, the player speaks to several charact
 Players manage variables including the hiring and training of custodial staff, investment in different forms of waste disposal, different education and waste tactics and budget. Factors affecting the players include rates of recycling contamination, the consumption of different kinds of products, relations between different waste management teams and the proliferation of rodents.
 The key task here is to relate the `systems problems' described by the model to interesting decisions and trade-offs within the game. In his Criteria for Strategy Game Design, Fabian Fischer \cite{fischer_criteria_2014} puts forward a theory of the `interesting decision' that sits between a guess and a solution, as an ambiguous problem with a set of consequences. Interesting decisions are achieved by balancing the amount of information given to the player at a time: enough that the decision is not simply a guess, but not so much that the consequences of the decision are obvious.
 
-The `efficiency' of the game is also important: the amount of time a player spends making interesting decisions, vs waiting or performing tasks that have few consequences for the gameplay. Game designer Keith Burgun argues that efficiency in this sense should be maximised: ``If players give you five minutes, that's a huge gift and you owe it to them to make sure it is completely rewarded``. Transparency of the game mechanics are also important: an awareness of how the current state of the game came about, the alternative courses of action that could be taken, and some idea of immediate consequences of those actions. 
+The `efficiency' of the game is also important: the amount of time a player spends making interesting decisions, vs waiting or performing tasks that have few consequences for the gameplay. Game designer Keith Burgun argues that efficiency in this sense should be maximised: ``If players give you five minutes, that's a huge gift and you owe it to them to make sure it is completely rewarded''. Transparency of the game mechanics are also important: an awareness of how the current state of the game came about, the alternative courses of action that could be taken, and some idea of immediate consequences of those actions. 
 
 \subsection{Playtesting}
 
