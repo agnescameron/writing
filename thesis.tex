@@ -1,16 +1,16 @@
-\documentclass[nofonts,nols,justified,nobib]{tufte-handout} 
+\documentclass[nofonts,nols,justified,nobib]{tufte-book} 
 \usepackage{graphicx} 
 \setcounter{secnumdepth}{3}
 \usepackage{titlesec}
 \usepackage{hyperref}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{titletoc}
 \captionsetup{compatibility=false, font=footnotesize}
 \captionsetup[subfigure]{labelfont=bf,singlelinecheck=off,labelsep = space}
-\setcounter{tocdepth}{3}
-% \def\xcontentsline#1#2#3{\@ifnextchar\contentsline 
-%   {\contentsline{#1}{#2}{#3}{}{}}{}} 
-\makeatother
+\setcounter{tocdepth}{2}
+\dottedcontents{section}[2em]{\large\itshape}{3.8em}{1pc}
+\dottedcontents{subsection}[2cm]{\small\itshape}{3.3em}{1pc}
 \titleformat{\section}
 {\color{blue!80!black}\normalfont\Large\bfseries}
 {\color{blue!60!black}\thesection.}{.5em}{}
@@ -31,10 +31,11 @@
 
 \begin{document}
 
-\bibliographystyle{abbrv}
+\bibliographystyle{unsrt}
 \renewcommand{\thepage}{\roman{page}}
 % \maketitle
 
+\section*{Abstract}
 
 If Waste is Information, what can be learned from an understanding of maintenance at MIT as a complex information system? Through engaging students with flows of waste and their role within a waste system, can relations to and practices of waste management change? Working with communities that manage waste on campus, this project focusses on making legible processes of production, circulation and disposal of waste around MIT, through the medium of a simulation game. This game does not seek to represent an entire waste system, but instead, a small segment of one: solid waste management on the MIT Campus.
 The aim of this work is to engage players in changing both behaviours around, and attitudes toward campus waste systems. Though geared toward students at MIT, the ideas explored in these games apply to anyone interested in learning more about how we waste, and the scope and consequences of our actions.
@@ -44,7 +45,7 @@ The aim of this work is to engage players in changing both behaviours around, an
 \renewcommand{\thepage}{\arabic{page}}
 \setcounter{page}{1}
 % \listoftables
-% \tableofcontents
+\tableofcontents
 \newpage
 
 
@@ -58,13 +59,29 @@ Mierle Landman Ukeles
 \end{flushright}
 
 
+\section*{Introduction}
+
 Waste is an issue that manifests at both global and local scales. Within the US, landfill capacity is predicted to decrease by around 2.6\% year-on-year, and around 5\% in the Northeast (Waste Business Journal Report, 2017). The recycling rate for Municipal Solid Waste is around 34\% (around a third of that is currently exported), with the remaining portions relegated to landfill (80\%) and incineration (20\%) (EPA, 2018). The past year has seen major stresses on the worldwide recycling infrastructure, as China (previously one of the world's largest processors of recycling) has stopped accepting several kinds of recyclables \cite{albeck-ripka_your_2018}, and has decreased the required contamination rate for materials to be accepted to far below the previous norms \cite{germin_chinas_2018}, forcing many American cities to incinerate their contaminated municipal recycling for lack of another option \cite{milman_moment_2019, albeck-ripka_your_2018}.
+
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/3/perlman-material.jpg}
+\caption{A diagram by MITOS Fellow Rachel Perlman, showing material flows on campus \label{b}}
+\end{marginfigure}
 
 MIT as an institute is a part of this waste system. MIT produces approximately 5500 tonnes of waste annually, of which around 31\% goes on to be processed as single-stream recycling. Achieving the newly-stringent contamination rate has been a challenge, both for MIT, and for Casella (the single stream processor that handles the waste produced). 5 years ago, MIT's Office of Sustainability (MITOS) was formed to improve the Institute's waste lifecycle, with a focus on diverting waste from landfill across campus, reducing recycling contamination, and addressing how goods are consumed. The waste that MIT produces (and the qualities thereof) is necessarily a product of both an environment and a population.
 
 This thesis is not about `smart' waste technologies, but about how people might come to terms with waste (and `waste well') when these technologies are insufficient. How people decide to take action on civic issues is an open problem, relating in part to the attention we afford to these issues. This thesis explores the civic game as a means of directing this attention in a way that is playful, exploratory, and critical. In particular, it examines how we might use games to make civic systems legible, and how that legibility can lead to behaviour change. It uses the local population of MIT as a study, but it presents an approach and a set of tools that seek to be generalised.
 
+
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/1/flowchart.png}
+\caption{A guide to waste disposal by MIT Recycles \label{b}}
+\end{marginfigure}
+
+
 This thesis is organised into roughly 4 parts: in the first, I explore a contextual background, exploring questions of legibility and representation in waste, and broader civic systems. In the second, I examine the methodological background: looking specifically at behavioural, social and participatory interventions to change the way we waste. In the third, I introduce the Zero Waste Initiative at MIT, toward which this project contributes, and outline the scope of this work. In the fourth, I design, prototype, test and evaluate two `civic games' aimed at increasing the infrastructure legibility of waste systems on campus.
+
+\chapter{Background and Related Work}
 
 \section{Seeing Waste}
 
@@ -80,19 +97,20 @@ Claire Morawski, Container Recycling Association
 % \end{minipage}[b]{0.8\textwidth}
 \end{flushright}
 
-Single stream recycling was developed in California in the 1990s, and has since become the dominant form of recycling in the United States \cite{laskow_single-stream_2014}. Initially lauded for increasing the rates of collection of recyclable materials, and decreasing the load on curbside collection rounds, the efficacy of single-stream as a means of preserving resources is not as clear. Single-stream recycling allows all recycling to be placed in the same container, processed together at a Mixed Recycling Facility (MRF) by a combination of machinery and human sorting. The issue with MRFs is that, while it is possible to sort waste streams from one another, for many materials the eventual quality of the reclaimed product is significantly lower than if they had been processed separately \cite{morawski_understanding_2009}. During the growth of single-stream recycling, this was less of a problem: countries such as China were prepared to buy and process lower-quality baled stock, making this an economically viable option for processing large quantities of recycling. However, China's ``National Sword'' program has significantly reduced the market for some forms of poor-quality recycling (in particular plastics), leading to a large proportion of recycling in the United States going to landfill or incineration, and throwing the efficacy of single-stream into question.
-
 \begin{marginfigure}
-\includegraphics[width=\textwidth]{img/1/sorting.jpg}
-\caption{Manual sorting in an American Mixed Recycling Facility\label{b}}
+\includegraphics[width=\textwidth]{img/1/casella-sorting.jpg}
+\caption{Manual sorting in Casella's Mixed Recycling Facility \cite{delichatsios_trash_2011} \label{b}}
 \end{marginfigure}
 
-Ultimately, the convenience and apparent seamlessness of single-stream recycling belies the constant upkeep required to maintain it. The process of sorting recycling must still take place, and almost always involves human sorting labour as a component of the `high-tech' separation process. As Mattern remarks on the `smart' waste chutes installed at the Hudson Yards development: ``they cultivate an out-of-sight, out-of-mind public consciousness... garbage becomes more of a domestic aesthetic problem than an ecological concern.'' She asks instead whether the designers might provide a view of Swedish company Envac's ``smart, efficient'' waste collection system, making legible the infrastructure of disposal. \cite{mattern_instrumental_2016}
+Single stream recycling was developed in California in the 1990s, and has since become the dominant form of recycling in the United States \cite{laskow_single-stream_2014}. Initially lauded for increasing the rates of collection of recyclable materials, and decreasing the load on curbside collection rounds, the efficacy of single-stream as a means of preserving resources is not as clear. Single-stream recycling allows all recycling to be placed in the same container, processed together at a Mixed Recycling Facility (MRF) by a combination of machinery and human sorting. The issue with MRFs is that, while it is possible to sort waste streams from one another, for many materials the eventual quality of the reclaimed product is significantly lower than if they had been processed separately \cite{morawski_understanding_2009}. During the growth of single-stream recycling, this was less of a problem: countries such as China were prepared to buy and process lower-quality baled stock, making this an economically viable option for processing large quantities of recycling. However, China's ``National Sword'' program has significantly reduced the market for some forms of poor-quality recycling (in particular plastics), leading to a large proportion of recycling in the United States going to landfill or incineration, and throwing the efficacy of single-stream into question.
+
 
 \begin{marginfigure}
 \includegraphics[width=\textwidth]{img/1/envac.jpg}
 \caption{``Bins, but not as you know them'' -- a graphic from Envac's website\label{b} \cite{envac_smart_nodate}}
 \end{marginfigure}
+
+Ultimately, the convenience and apparent seamlessness of single-stream recycling belies the constant upkeep required to maintain it. The process of sorting recycling must still take place, and almost always involves human sorting labour as a component of the `high-tech' separation process. As Mattern remarks on the `smart' waste chutes installed at the Hudson Yards development: ``they cultivate an out-of-sight, out-of-mind public consciousness... garbage becomes more of a domestic aesthetic problem than an ecological concern.'' She asks instead whether the designers might provide a view of Swedish company Envac's ``smart, efficient'' waste collection system, making legible the infrastructure of disposal. \cite{mattern_instrumental_2016}
 
 This is not to say, of course, that it is not important to build technologies that deal with our waste as cleanly and efficiently as possible (particularly for the sake of people working with them). However, a distinction between efficiency (in an energetic sense) and convenience is necessary: friction, such as needing to sort recycling or walk further to a bin can be a positive force. This is not a concept unique to waste systems: for example, in the current context of fake news and social media overuse, the concept of a `good friction' (and variants thereof) are often cited as ways by which we might negotiate a healthier relationship with the internet \cite{donath_signals_2011, tufekci_twitter_2017}.
 
@@ -114,14 +132,20 @@ Kevin Lynch
 
 In his 1990 book Wasting Away\cite{lynch_wasting_1990}, urbanist Kevin Lynch writes extensively on how we see waste, asking what it might mean to `waste well' -- to be at peace with our relationship with waste, and deal with it thoughtfully and rationally. In a similar manner to his more famous work The Image of the City (in which he studies the mental models that we construct of urban spaces) \cite{lynch_image_1960}, so Lynch writes at length on the disparity between our imagination of waste systems, and their actual operation. He argues that wasting is a cultural construct, one overloaded with emotion and anxiety, thus making its related habits hard to shift. 
 
+
 \begin{marginfigure}
 \includegraphics[width=\textwidth]{img/1/waste-complexity.png}
 \caption{Comparing an image of the waste system to its manifestation. \cite{liboiron_why_2014} \label{b}}
 \end{marginfigure}
 
-Max Liboiron argues that our imagination of waste is necessarily limited to a small component of a much larger system: one that encompasses not just our empirical experience of wasting (e.g. disposal, compost and recycling) but also a much broader range of social, economic and environmental effects \cite{liboiron_mapping_2014, liboiron_why_2014}. Liboiron also decries the common representation of waste as a behavioural problem, arguing that given that industrial waste comprises a far greater proportion of global waste streams than municipal waste, it is structural rather than social change that is needed \cite{liboiron_against_2014}. In reference to overly-emotive recycling campaigns, Gay Hawkins remarks that ``Our imaginations are overflowing with the horror of waste'', a horror that is as paralysing as it is counter-productive \cite{hawkins_ethics_2006}.
-
 %%IMAGE TO ADD: emotive recycling campaign
+% can it live somewhere else?
+% \begin{marginfigure}
+% \includegraphics[width=\textwidth]{img/1/recycling-riverside.jpg}
+% \caption{Adverts by the Recycle Western Riverside authority. \cite{noauthor_recycle_2006} \label{b}}
+% \end{marginfigure}
+
+Max Liboiron argues that our imagination of waste is necessarily limited to a small component of a much larger system: one that encompasses not just our empirical experience of wasting (e.g. disposal, compost and recycling) but also a much broader range of social, economic and environmental effects \cite{liboiron_mapping_2014, liboiron_why_2014}. Liboiron also decries the common representation of waste as a behavioural problem, arguing that given that industrial waste comprises a far greater proportion of global waste streams than municipal waste, it is structural rather than social change that is needed \cite{liboiron_against_2014}. In reference to overly-emotive recycling campaigns, Gay Hawkins remarks that ``Our imaginations are overflowing with the horror of waste'', a horror that is as paralysing as it is counter-productive \cite{hawkins_ethics_2006}.
 
 
 \begin{flushright}
@@ -144,8 +168,7 @@ Maintenance art gives us a means to look not only at waste, but also those taske
 
 \begin{marginfigure}
 \includegraphics[width=\textwidth]{img/1/touch-sanitation.png}
-\caption{A shot from Touch Sanitation Performance \label{b}}
-\cite{ukeles_touch_1980} 
+\caption{A shot from Touch Sanitation Performance, 1980 \cite{ukeles_touch_1980}  \label{b}}
 \end{marginfigure}
 
 
@@ -160,10 +183,18 @@ Maintenance art forces the viewer to confront realities that are abject, guilt-i
 The term infrastructure legibility was coined by Dietmar Offenhuber in his book Waste Is Information \cite{offenhuber_waste_2017}, to refer to the problem of representing civic infrastructures too complex to be understood in their entirety. This is an idea that draws heavily from Lynch, who defines the ``legibility'' of a system as ``the ease with which its parts can be recognised and can be organised into a coherent pattern''. 
 
 %%IMAGE TO ADD: sim city
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/1/sim-city.png}
+\caption{A still from Sim City 2000 \label{b}}
+\end{marginfigure}
 
 There is, of course, a tension between creating a legible representation, and over-simplifying a narrative. It is also worth asking: for whom is a system being made legible? As James C. Scott observes in Seeing Like a State, it is by simplifying and `rationalising' populations that states might exert undue power over their citizens \cite{scott_seeing_1998}. Representations can also inherently encode the assumptions or biases of the author: for example, Ava Kofman notes that the `advice' in SimCity 4's manual (itself heavily based on Forrester's Urban Dynamics) coerces a particular political viewpoint \cite{kofman_les_2014}. As one player put it in an interview with Los Angeles Times in 1992 ``I became a total Republican playing this game. All I wanted was for my city to grow, grow, grow.''\cite{Baker_model_2019}
 
 %%IMAGE TO ADD:a brighter idea
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/1/ten-brighter-ideas.png}
+\caption{A still from Bret Victor's \emph{Ten Brighter Ideas?}, an 'explorable explanation' of climate policy \cite{victor_ten_2010}  \label{b}}
+\end{marginfigure}
 
 Bret Victor's essay Explorable Explanations goes some way towards addressing these issues: by providing people with tools to interrogate the assumptions behind a particular representation, Victor proposes that one might draw a more nuanced conclusion. Instead of seeing a particular piece of information as ``right or wrong'', ``bad or good'','' a representation becomes ``one point in a large space of possibilities.'' Victor terms this `active reading', transforming a text from something to be read, to ``an environment to think in'' \cite{victor_explorable_2011}. Offenhuber is not alone in advocating for a `systems perspective' on waste: popular framings of waste systems such as `Lifecycle Management' and the `Circular Economy' both draw heavily on systems ideas to address the complexity inherent in sustainable decision-making.
 
@@ -173,13 +204,16 @@ Bret Victor's essay Explorable Explanations goes some way towards addressing the
 The figuring of urban infrastructures as information systems dates back to the 1960s, where Jay Forrester (who had founded the field of Systems Dynamics a decade before) worked with former mayor of Boston John F. Collins, to produce the book Urban Dynamics. The main thesis of this work is that, in considering cities, organisations or even countries as feedback systems, one can glean powerful and counter-intuitive insights. This form of analysis has been used to generate simulations of effects including segregation \cite{schelling_dynamic_1971}, resource acquisition \cite{epstein_growing_1996-1}, and gentrification \cite{batty_new_2013}. The use of these models in urban planning is not without controversy: a common criticism is that the information they impart is highly abstracted, and can encode the biases of the modeller: it is one thing to use simulations to understand a dynamic in an urban system, and another to use them build cities anew.
 
 %%IMAGE TO ADD: agent based models
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/1/sugarscape.png}
+\caption{An image of the \emph{`sugarscape'} simulation -- part of Epstein and Axtell's \emph{Growing Artificial Societies} \cite{epstein_growing_1996-1} \label{b}}
+\end{marginfigure}
 
 In `Leverage Points: Places to Intervene in a System', Donella Meadows enumerates the effectiveness of 12 different `sites of intervention' in a system, noting that often (particularly in public, political and civic systems), it is the least effective forms of intervention (numbers and constants) that receive the greatest deal of attention \cite{meadows_leverage_1997}. Meadows also emphasises the effectiveness of the information feedback loop (6), citing a study where a group of houses with a electricity meter installed by the door used 30\% less energy than an identical group where the meter was in the basement. Perhaps, if we took our refuse to the dump daily, or spent time regularly with the workers who clean our office buildings by night, we might have a different attitude to our waste. 
 
 In this analysis, however it is important to acknowledge that the greatest changes to be made are often structural. Just as Max Liboiron points out, in her essay `Against Awareness, for Scale: Garbage is Infrastructure Not Behaviour', the agency of the individual in the system is limited by the goals, politics and dynamics of waste systems themselves. In the U.S., where around 98\% of waste is industrial (rather than municipal)\cite{liboiron_against_2014}, and it can use more energy to rinse a glass bottle in order to recycle it than it does to throw it away \cite{tierney_reign_2018}, it would be irresponsible to advocate for any change of behaviour without acknowledging the broader infrastructure at work.
 
 \subsection{Waste as a complex system}
-
 
 \begin{flushright}
 % \begin{minipage}[b]{0.8\textwidth}
@@ -190,15 +224,83 @@ Mary Douglas
 % \end{minipage}
 \end{flushright}
 
-
-
 Equally, however, it would be defeatist (and inaccurate) to insist that one has no leverage over waste systems. Liboiron argues that `even if individual actions don't save the world, they are expressions of an ethic that can lead to other actions that do scale.'\cite{liboiron_against_2014} This is a difference that might be characterised by the concepts from political science of internal vs external efficacy: an internal efficacy is the notion that one understands a system and can participate in it, whereas an external efficacy is a feeling of control over that system. Much as political campaigners (for the most part) do not possess any great power to make governments respond to their demands, they can still be effective as individuals with high internal efficacy \cite{zuckerman_mobilizing_2019}.
 
 An example of a scaling action is that of recycling contamination. Recycling contamination is a huge contemporary issue, as it not only results in a high volume of otherwise good recycling diverted to landfill, but, if not caught, a single contaminated bag can cause an entire truck to be turned away at the recycling plant, a costly and wasteful error. Further down the line, China (a key importer of recycling) will reject any received shipment deemed to be greater than 0.5\% impure; ships containing contaminated loads turn back around, and head to landfill. \cite{albeck-ripka_your_2018}. Tackling contamination requires action at the level of the individual, both in showing more care when disposing of waste (to avoid obvious contaminants such as food waste), and in maintaining awareness of what can and cannot be recycled. Livia Albeck-Ripka of the New York Times identifies a set of behaviours around the second as `aspirational recycling' \cite{albeck-ripka_6_2018}: wanting to believe that objects can be recycled (such as coffee cups, greasy boxes, food-filled containers) that are in reality contaminants. 
 
 %IMAGE TO ADD: common contaminants
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/1/contaminants.jpg}
+\caption{Common recycling contaminants \cite{albeck-ripka_6_2018} \label{b}}
+\end{marginfigure}
 
 It is through taking such a systems perspective on waste that we might participate effectively. It is unfortunate that `recycling well' often involves not recycling at all: but if we can accept that recycling is a poor substitute for not consuming in the first place, we are provided with an alternative. In designing interventions to a waste system, it is also worth considering what it is about the system that we want to change. Even if recycling well does not make a huge amount of difference to the environment, it might make a much more immediate difference to the people who handle our waste directly.
+
+
+\section{Taking Part in Cities}
+What does it mean to take part in a civic system? In this section, I explore theories of participation, with a focus on the use of games and play as a means of making legible otherwise dull, inaccessible or obscure processes. While here I foucus on ideas within the field of urbanism, these ideas may also be applied to forms of political participation.
+
+
+\subsection{Participatory Urbanism}
+
+With roots in Scandinavian `co-operative design' research of the 1970's, where workers were involved as partners in the development of new software systems for their workplaces, participatory urbanism in the US draws from 60s ideologies around advocacy, equity and transactive planning as an increasingly common paradigm through which large-scale civic projects are framed \cite{krivy_participatory_2013}. 
+
+At its core, participatory urbanism is intended to give a voice to those affected by planning practices, and to promote political equality through giving under-represented groups agency over their environs. `Participatory' is, however, a notoriously over-used phrase, describing a continuum of practices ranging from radical co-operatives through to the proponents of the `sharing economy', where invocations of participation can veer toward the exploitative. Alphabet Inc's Sidewalk Labs, for example, has been criticised for using a `participatory' input process that restricts range of possible responses as a substitute for real civic democracy. When it is not possible to question the basic assumptions of the design process, participation becomes less about `democratic planning' and more about symbolic or tokenistic involvement \cite{arnstein_ladder_1969}. 
+
+\subsection{Participation in Waste Management}
+
+A key idea in participatory urbanism is that ownership of and participation in the management of a system can increase the effectiveness of various interventions. Forms of participatory waste management range from voting on policy, to digital reporting systems, to actively engaging volunteers in recording and managing waste streams, and educating their peers. 
+
+In Waste is Information, Offenhuber examines the role of interfaces between citizens and governments in `participatory' waste collection systems, making the argument that the politics of representation of a system require a set of common protocols, understood by all participants. Using the example of a participatory waste project in Boston, where residents were ..., he critiques the notion of decentralisation for decentralisation's sake, arguing that the fragmentation of urban services can create the kind of inequality it might purport to dynamically address \cite{offenhuber_waste_2017}. Jennifer Gabrys, too, explores how well-meaning citizen science projects can nonetheless end up using people as a cheap means of producing data for somebody else, rather than projects that give back as much as they demand from participants. \cite{Gabrys_programming_2014}
+
+%IMAGE TO ADD: trash track
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/2/divertsy.png}
+\caption{Images from the Trash Track project \label{b}}
+\end{marginfigure}
+
+
+In 2009 Offenhuber worked on MIT Senseable City Lab's Trash Track project \cite{ratti_trash_2009}, which used a set of GPS sensors to track the movement of different kinds of waste emanating from the city of Seattle. This project provided a detailed insight into the variety of destinations reached, routes and time taken to get there, as well as an analysis of how effectively the different kinds of waste were being dealt with. However, while contributing new knowledge, and defying popular misconceptions about waste \cite{liboiron_mapping_2014}, these visualisations stop a little short of asking the viewer to take responsibility for their role within a system. As `views from nowhere', they do not include the viewer themselves, allowing one to dissociate the movement of this waste from one's own role within the system of its production.
+
+%%needs revising!!
+
+\subsection{Playful citizenship}
+
+\begin{flushright}
+% \begin{minipage}[b]{0.8\textwidth}
+\begin{flushright}
+\emph{``I could never have told them that and had any impact. They had to discover it for themselves.''}\cite{sterman_john_2013}\\
+John Sterman
+\end{flushright}
+% \end{minipage}
+\end{flushright}
+
+\begin{flushright}
+% \begin{minipage}[b]{0.8\textwidth}
+\begin{flushright}
+\emph{``Games are the pop cultural medium of systems. When we play a game, we interact with a dynamic system and we learn to think and act in systems. Many scholars and learning theorists have identified ``systems thinking'' as one of the more important strategies for connecting knowledge to action.''}\cite{macklin_games_2013}\\
+Coleen Macklin
+\end{flushright}
+% \end{minipage}
+\end{flushright}
+
+'Serious' or `civic' games (here I choose the latter term) and simulation have become an increasingly popular mode of engagement for participatory projects in recent decades \cite{krivy_participatory_2013}. While there are numerous use cases for these games, here I will focus on games intended specifically for the context of urban planning and systems legibility. At their core, the `civic games' of interest here are modes of play that make legible complex infrastructures (be they physical, political, or social) through participatory, critical and exploratory methods. 
+
+The `simulation game' originates from the late 1980s, where games such as SimCity proved surprisingly popular amongst players. Assuming an urban system planned and controlled from above, the most common critiques of SimCity are of the closed nature of the underlying algorithm, a `black box' that doesn't allow the player to question the underling assumptions of the game's maker \cite{starr_seductions_1994}.
+
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/2/attitude-condition.png}
+\caption{Stern and Oskamp's `attitude-behavior-condition' model for environmental action and participation\label{b} \cite{stern_managing_1987}}
+\end{marginfigure}
+
+In her book Negotiation and Design for the Self-Organising City, architect Ekim Tan asks us to re-consider urban games (such as SimCity) in a more open-ended context, advocating for `city gaming' as an accessible tool for engaging communities in urban planning exercises \cite{tan_negotiation_2014}. Tan's city games occupy a spectrum between educational and planning tools, including awareness-raising exercises about mass migration, educational games about successful affordable housing policies, and consultation on making new developments more bicycle- and pedestrian-friendly. Play the City is intended to `accelerate consensus' between stakeholders with conflicting interests, bringing together citizens, planners and policymakers in collective decision-making exercises, constrained by a rule-set that is tailored to the problem they are trying to solve \cite{tan_city_2017}. However, in generating the rules of the game, the asking of more basic questions e.g. `Should this development exist in the first place' is essential for true (rather than tokenistic) democracy \cite{shaw_informational_2017}.
+
+Similar in scope (though with a more global vision) are participatory simulations such as John Sterman's `World Climate' scenarios, which use complex climate models to guide participants (typically politicians, policymakers and academics) through a range of scenarios. Based directly on climate science, World Climate seeks to get players to `draw their own conclusions', about emissions policy through play, rather than attempt to argue the point with words \cite{sterman_john_2013}. 
+
+The works of Francis Tseng and Frank Lantz both provoke critical narratives within simulation games. For example, Lantz's wildly popular Universal Paperclips provides an insight into the perils of ill-constrained artificial intelligence \cite{lantz_universal_2017}, while Tseng's startup simulator The Founder satirises unethical innovation processes \cite{tseng_founder_2017}. In both these cases, a compelling narrative (supported, in Lantz's case, by a fairly bare interface) is used to involve the player in participating in a simulation. The performance of these transgressive behaviours within the game setting encourage the player to think more critically about what aspects of the system led them to behave in the way that they did: a technique that combats what Scot Osterweil nicknames the `virtuous player syndrome' (where players unquestioningly do what they assume is `right' in order to win the game) \cite{osterweil_civic_2011}.
+
+Nicky Case's simulation games -- which use Bret Victor's term `explorable explanations' -- act as sandboxes for the player, allowing them to question the assumptions underling their models. Case encourages players to perturb the dynamics of a complex system, both to learn, and then to test the assumptions made by the game's author (Case, 2016). Case cites Donella Meadows as a key inspiration in their work, which sits between systems theory, simulation and play. As Ava Kofman argues, on writing about agency in urban simulation games ``We should ask not what our ideal city on SimCity, LivingPlanIT, or some other Urban OS would look like, but what our ideal urban simulator would be. Given this or that operating system, who does the city work for and who works for the city? No longer is the goal to design an urban imaginary: you must now code the game.''.
+
 
 
 \section{Related Work}
@@ -214,14 +316,12 @@ It is through taking such a systems perspective on waste that we might participa
 % \end{minipage}
 \end{flushright}
 
-Since around the 1970's (which marked the passing of the Resource Conservation and Recovery Act in the United States), the problem of municipal waste has been linked both to personal responsibility, and to an environmental cause. At present, the minimisation of municipal solid waste is broadly framed as a co-operative problem in which we are all expected to play a role. Interventions into waste streams can take place at the site of production (for example, minimising wastes created by industrial processes and logistics), the site of consumption (encouraging consumers to buy less, or reuse), and the site of disposal (recycle, compost). As has been observed by Liboiron \cite{liboiron_against_2014}, when it comes to civic education, focus tends toward changing habits of disposal, despite its relative ineffectiveness when compared to consumption, or changing the industrial context in the first place. The `waste hierarchy' model is often used to illustrate relative merits of different diversion strategies, distinguishing between Reduction, Reuse, Recycling and Recovery.
-
-
 \begin{marginfigure}
 \includegraphics[width=\textwidth]{img/2/recycling-hierarchy.png}
 \caption{Waste hierarchy diagram\label{b}}
 \end{marginfigure}
 
+Since around the 1970's (which marked the passing of the Resource Conservation and Recovery Act in the United States), the problem of municipal waste has been linked both to personal responsibility, and to an environmental cause. At present, the minimisation of municipal solid waste is broadly framed as a co-operative problem in which we are all expected to play a role. Interventions into waste streams can take place at the site of production (for example, minimising wastes created by industrial processes and logistics), the site of consumption (encouraging consumers to buy less, or reuse), and the site of disposal (recycle, compost). As has been observed by Liboiron \cite{liboiron_against_2014}, when it comes to civic education, focus tends toward changing habits of disposal, despite its relative ineffectiveness when compared to consumption, or changing the industrial context in the first place. The `waste hierarchy' model is often used to illustrate relative merits of different diversion strategies, distinguishing between Reduction, Reuse, Recycling and Recovery.
 
 In municipal waste systems, efforts to `change the way we waste' typically involve some form of behaviour or attitudinal change on the part of the citizen, even if that change is unconscious or involuntary. For example, in Max Liboiron's description of her intervention in Columbia University, while it involved no `awareness' campaign whatsoever, plastic bottles were reduced simply by removing their availability and providing for re-usable bottles, a shift in infrastructure leading to a change in habit. \cite{liboiron_against_2014}
 
@@ -234,7 +334,7 @@ The conservation of all resources by means of responsible production, consumptio
 \cite{zero_waste_international_alliance_zero_2017}
 \end{quote}
 
-A critique of many corporate `zero waste' initiatives is that, while investing considerable resources into campus waste management for their own offices, little attempt is made to make the actual products or industrial practices of the company more sustainable. ?????
+A critique of many corporate `zero waste' initiatives is that, while investing considerable resources into campus waste management for their own offices, little attempt is made to make the actual products or industrial practices of the company more sustainable. (?? this section needs revising)
 
 %NEEDS REVISING!
 
@@ -267,69 +367,29 @@ Hornik et. Al expand this attitude/condition model of behaviours to include both
 
 \subsection{Municipal Waste Interventions}
 
+%IMAGE TO ADD: zwdg
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/2/zero-waste-guidelines.png}
+\caption{The Zero Waste Design Guidelines, 2018 \cite{aia_new_york_zero_2017} \label{b}}
+\end{marginfigure}
+
+
 Policy applications of this behavioural research may be found in the recently-released Zero Waste Design Guidelines, drawn up through a collaboration between AIA New York Committee on the Environment, architects Kiss + Cathcart, and environmental groups ClosedLoops and the Foodprint Group. Though many of the architectural design guidelines are specific to the structural constraints of New York, the Social and Policy recommendations draw from a range of case studies on the national and international levels \cite{aia_new_york_zero_2017}.
 
-Interventions in the document are classified according to a set of best-practices strategies, which include a range of infrastructural, educational and participatory guidelines. One such successful intervention is the Zero Waste Program at Etsy's Brooklyn offices. Implemented in 2017 to coincide with the construction of a new building on the site, the program uses feedback on waste generation, centralised waste disposal locations, and continual waste information and education programs in addition to infrastructural changes. 
+Interventions in the document are classified according to a set of best-practices strategies, which include a range of infrastructural, educational and participatory guidelines. One such successful intervention is the Zero Waste Program at Etsy's Brooklyn offices. Implemented in 2017 to coincide with the construction of a new building on the site, the program uses feedback on waste generation, centralised waste disposal locations, and continual waste information and education programs in addition to infrastructural changes. Among the interventions is a now open-sourced piece of software called Divertsy, which tracks the waste diverted from landfill at the offices, using a combination of user input, random audits, and automated data capture on bins.
 
 %IMAGE TO ADD: etsy intervention
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/2/divertsy.png}
+\caption{Screengrab from the Divertsy interface \cite{benninger_divertsy_2019} \label{b}}
+\end{marginfigure}
+
 
 Throughout the report, successful case studies were highly tailored to a local context, reliant on an understanding of the specific concerns and challenges of the local populace. In Etsy's case, an audit of landfill waste from the building showed a high proportion of non-recyclable/compostable containers from local coffee shops. In response to this, the building provided staff with free re-usable cups, and provides regular information as to which vendors give a discount to customers bringing their own crockery.
 
-\subsection{Participatory Urbanism}
 
-These kinds of local and community-focussed interventions fall under the umbrella of participatory urbanism. With roots in Scandinavian `co-operative design' research of the 1970's, where workers were involved as partners in the development of new software systems for their workplaces, participatory urbanism in the US draws from 60s ideologies around advocacy, equity and transactive planning as an increasingly common paradigm through which large-scale civic projects are framed \cite{krivy_participatory_2013}. 
-
-At its core, participatory urbanism is intended to give a voice to those affected by planning practices, and to promote political equality through giving under-represented groups agency over their environs. `Participatory' is, however, a notoriously over-used phrase, describing a continuum of practices ranging from radical co-operatives through to the proponents of the `sharing economy', where invocations of participation can veer toward the exploitative. Alphabet Inc's Sidewalk Labs, for example, has been criticised for using a `participatory' input process that restricts range of possible responses as a substitute for real civic democracy. When it is not possible to question the basic assumptions of the design process, participation becomes less about `democratic planning' and more about symbolic or tokenistic involvement \cite{arnstein_ladder_1969}. 
-
-\subsection{Participation in Waste Management}
-
-A key idea in participatory urbanism is that ownership of and participation in the management of a system can increase the effectiveness of various interventions. Forms of participatory waste management range from voting on policy, to digital reporting systems, to actively engaging volunteers in recording and managing waste streams, and educating their peers. 
-
-In Waste is Information, Offenhuber examines the role of interfaces between citizens and governments in `participatory' waste collection systems, making the argument that the politics of representation of a system require a set of common protocols, understood by all participants. Using the example of a participatory waste project in Boston, where residents were ..., he critiques the notion of decentralisation for decentralisation's sake, arguing that the fragmentation of urban services can create the kind of inequality it might purport to dynamically address \cite{offenhuber_waste_2017}. Jennifer Gabrys, too, explores how well-meaning citizen science projects can nonetheless end up using people as a cheap means of producing data for somebody else, rather than projects that give back as much as they demand from participants. \cite{Gabrys_programming_2014}
-
-%IMAGE TO ADD: trash track
-
-In 2009 Offenhuber worked on MIT Senseable City Lab's Trash Track project \cite{ratti_trash_2009}, which used a set of GPS sensors to track the movement of different kinds of waste emanating from the city of Seattle. This project provided a detailed insight into the variety of destinations reached, routes and time taken to get there, as well as an analysis of how effectively the different kinds of waste were being dealt with. However, while contributing new knowledge, and defying popular misconceptions about waste \cite{liboiron_mapping_2014}, these visualisations stop a little short of asking the viewer to take responsibility for their role within a system. As `views from nowhere', they do not include the viewer themselves, allowing one to dissociate the movement of this waste from one's own role within the system of its production.
-
-%%needs revising!!
-
-\subsection{Playful citizenship}
-
-\begin{flushright}
-% \begin{minipage}[b]{0.8\textwidth}
-\begin{flushright}
-\emph{``I could never have told them that and had any impact. They had to discover it for themselves.''}\cite{sterman_john_2013}\\
-John Sterman
-\end{flushright}
-% \end{minipage}
-\end{flushright}
-
-\begin{flushright}
-% \begin{minipage}[b]{0.8\textwidth}
-\begin{flushright}
-\emph{``Games are the pop cultural medium of systems. When we play a game, we interact with a dynamic system and we learn to think and act in systems. Many scholars and learning theorists have identified ``systems thinking'' as one of the more important strategies for connecting knowledge to action.''}\cite{macklin_games_2013}\\
-Coleen Macklin
-\end{flushright}
-% \end{minipage}
-\end{flushright}
-
-'Serious' or `civic' games (here I choose the latter term) and simulation have become an increasingly popular mode of engagement for participatory projects in recent decades \cite{krivy_participatory_2013}. While there are numerous use cases for these games, here I will focus on games intended specifically for the context of urban planning and systems legibility. At their core, the `civic games' of interest here are modes of play that make legible complex infrastructures (be they physical, political, or social) through participatory, critical and exploratory methods. 
-
-The `simulation game' originates from the late 1980s, where games such as SimCity proved surprisingly popular amongst players. Assuming an urban system planned and controlled from above, the most common critiques of SimCity are of the closed nature of the underlying algorithm, a `black box' that doesn't allow the player to question the underling assumptions of the game's maker \cite{starr_seductions_1994}.
-
-\begin{marginfigure}
-\includegraphics[width=\textwidth]{img/2/attitude-condition.png}
-\caption{Stern and Oskamp's `attitude-behavior-condition' model for environmental action and participation\label{b}}
- \cite{stern_managing_1987}
-\end{marginfigure}
-
-In her book Negotiation and Design for the Self-Organising City, architect Ekim Tan asks us to re-consider urban games (such as SimCity) in a more open-ended context, advocating for `city gaming' as an accessible tool for engaging communities in urban planning exercises \cite{tan_negotiation_2014}. Tan's city games occupy a spectrum between educational and planning tools, including awareness-raising exercises about mass migration, educational games about successful affordable housing policies, and consultation on making new developments more bicycle- and pedestrian-friendly. Play the City is intended to `accelerate consensus' between stakeholders with conflicting interests, bringing together citizens, planners and policymakers in collective decision-making exercises, constrained by a rule-set that is tailored to the problem they are trying to solve \cite{tan_city_2017}. However, in generating the rules of the game, the asking of more basic questions e.g. `Should this development exist in the first place' is essential for true (rather than tokenistic) democracy \cite{shaw_informational_2017}.
-
-Similar in scope (though with a more global vision) are participatory simulations such as John Sterman's `World Climate' scenarios, which use complex climate models to guide participants (typically politicians, policymakers and academics) through a range of scenarios. Based directly on climate science, World Climate seeks to get players to `draw their own conclusions', about emissions policy through play, rather than attempt to argue the point with words \cite{sterman_john_2013}. 
-
-The works of Francis Tseng and Frank Lantz both provoke critical narratives within simulation games. For example, Lantz's wildly popular Universal Paperclips provides an insight into the perils of ill-constrained artificial intelligence \cite{lantz_universal_2017}, while Tseng's startup simulator The Founder satirises unethical innovation processes \cite{tseng_founder_2017}. In both these cases, a compelling narrative (supported, in Lantz's case, by a fairly bare interface) is used to involve the player in participating in a simulation. The performance of these transgressive behaviours within the game setting encourage the player to think more critically about what aspects of the system led them to behave in the way that they did: a technique that combats what Scot Osterweil nicknames the `virtuous player syndrome' (where players unquestioningly do what they assume is `right' in order to win the game) \cite{osterweil_civic_2011}.
-
-Nicky Case's simulation games -- which use Bret Victor's term `explorable explanations' -- act as sandboxes for the player, allowing them to question the assumptions underling their models. Case encourages players to perturb the dynamics of a complex system, both to learn, and then to test the assumptions made by the game's author (Case, 2016). Case cites Donella Meadows as a key inspiration in their work, which sits between systems theory, simulation and play. As Ava Kofman argues, on writing about agency in urban simulation games ``We should ask not what our ideal city on SimCity, LivingPlanIT, or some other Urban OS would look like, but what our ideal urban simulator would be. Given this or that operating system, who does the city work for and who works for the city? No longer is the goal to design an urban imaginary: you must now code the game.''.
+\subsection{Campus Waste Interventions}
+Campus best practices and case studies
 
 \subsection{Playing with Trash}
 
@@ -423,10 +483,11 @@ The timeline for the Zero Waste Pilot study is between February-April 2019. Over
 
 
 
-\section{Games}
+\chapter{Developing Playful Interventions}
 
+Proposal outline with goals goes here?
 
-\subsection{Trash Poker}
+\section{Trash Poker}
 
 The first component of this project is a design for a card game, that develops on the basic model of the `recycling classification' game to create a more complex scenario where players compete to contaminate one anothers waste streams. This game was developed for the initial workshop of the Zero Waste Pilot scheme, and was intended as a complement to talks on Institute recycling from Ruth Davis, and Brian Goldberg.
 The idea for the game first came after a conversation with MIT Learning Arcade's Scot Osterweil, about the idea of Virtuous Player Syndrome. Virtuous Player Syndrome is a term he uses to describe civic games where you win by performing the `correct' action and behaviour to get through the game as quickly as possible. Instead, he posits that games where the player must perform transgressive or morally ambiguous behaviours to succeed gives rise to a greater level of reflection. Thus, instead of simply sorting recycling, players are required to make strategic trade-offs: do you contaminate a player's waste stream with food waste, or do you wait to see if you can steal their compost bin? Are coffee cups recyclable, or are you handing them points?
@@ -454,13 +515,13 @@ The second play-test took place in a meeting of the Viral Communications group, 
 The most specific feedback from the gameplay was that the game was too disheartening: with most of the items available not recyclable, it was hard to get a positive score, and left players with the feeling of futility. There were also too many items, requiring a lot of time at the start of the game to deal the right number to each player, and confusion as to slight differences between some of the cards (e.g. Multiple plastic bottle cards). To correct this, the number of items was condensed to just 12: 4 recyclable, 4 trash, and 1 each for every speciality stream (e-waste, clothing, compost, batteries).
 
 
-\subsection{Let's Play, Waste at MIT}
+\section{Let's Play, Waste at MIT}
 
 The second component of this project is a digital, single-player simulation game that draws upon critical simulations such as Universal Paperclips and The Founder for inspiration. Players are given administrative control of the MIT campus for which they attempt to earn `zero waste' status by diverting >90\% of all waste from landfill. This is achieved by navigating a changing set of internal and external mechanics, which multiply in number and difficulty as the game progresses.
 By taking control over the structural dynamics of the waste system while being influenced by the actions of individuals (e.g. you can decide which buildings get cleaned, but a variable you can't control is how individuals recycle), participants learn about the complexity of the waste systems in the institute while reflecting on their own role within them. The goal of this game is to encourage the player to consider themselves as an actor within a broader system of waste, and engage with the effects (both positive and negative) that they can have as part of the community. It also encourages a broader picture of the complexities inherent in managing waste systems, and the real limitations affecting those tasked with managing waste on the MIT Campus.
 Where possible, the narrative elements of the game are taken directly from conversations with people involved in waste management on the MIT Campus.
 
-\subsection{ at MIT as a Complex Information System}
+\subsection{Waste at MIT as a Complex Information System}
 
 In order to develop a systems simulation of waste at MIT, it was necessary to develop a series of system diagrams and models to simulate various aspects of the system. While it is not conceivable to represent all of the variables at work in capturing the waste stream, I attempted to represent, in some manner, all of the key concerns that had arisen as part of the interview process. 
 
@@ -494,20 +555,20 @@ Loopy, described by Case as a `tool for thinking in systems' uses the block-and-
   \label{optimising}
 \begin{subfigure}{.3\textwidth}
   \centering
-  \includegraphics[width=1\linewidth]{img/3/loopy/small-static.png}
+  \includegraphics[width=1\linewidth]{img/4/loopy/small-static.png}
 \caption{\textit{Initial system, static}}
 \end{subfigure}
  \quad
 \begin{subfigure}{.3\textwidth}
   \centering
-  \includegraphics[width=1\linewidth]{img/3/loopy/small-win.png}
+  \includegraphics[width=1\linewidth]{img/4/loopy/small-win.png}
 \caption{\textit{Winning the game}}
   \label{small:win}
 \end{subfigure}%
 \quad
 \begin{subfigure}{.3\textwidth}
   \centering
-  \includegraphics[width=1\linewidth]{img/3/loopy/small-lose.png}
+  \includegraphics[width=1\linewidth]{img/4/loopy/small-lose.png}
   \caption{\textit{Losing the game}}
   \label{small:lose}
 \end{subfigure}% 
@@ -527,20 +588,20 @@ The next model created incorporated a much larger number of variables, to better
   \label{optimising}
 \begin{subfigure}{.3\textwidth}
   \centering
-  \includegraphics[width=1\linewidth]{img/3/loopy/big-static.png}
+  \includegraphics[width=1\linewidth]{img/4/loopy/big-static.png}
 \caption{\textit{Initial system, static}}
 \end{subfigure}
  \quad
 \begin{subfigure}{.3\textwidth}
   \centering
-  \includegraphics[width=1\linewidth]{img/3/loopy/big-win.png}
+  \includegraphics[width=1\linewidth]{img/4/loopy/big-win.png}
 \caption{\textit{Winning the game}}
   \label{small:win}
 \end{subfigure}%
 \quad
 \begin{subfigure}{.3\textwidth}
   \centering
-  \includegraphics[width=1\linewidth]{img/3/loopy/big-lose.png}
+  \includegraphics[width=1\linewidth]{img/4/loopy/big-lose.png}
   \caption{\textit{Losing the game}}
   \label{small:lose}
 \end{subfigure}% 
@@ -581,8 +642,6 @@ Need to do!
 
 
 
-
-
 \subsection{Development}
 
 Let's Play: Waste at MIT was developed as a series of prototypes between December 2018 and April 2019. The initial iteration used a command-line interface written in NodeJS for the sake of fast prototyping without the need for detailed graphics, using ascii representations to interface to the backend. This allowed for the development and demonstration of basic game mechanics, but quickly grew unwieldy when dealing with multiple menus and asynchrony. Due to issues of accessibility and sharing over the web, this was never intended as the final iteration.
@@ -591,10 +650,13 @@ The next version used a combination of Javascript and JQuery to compose a web in
 
 The third and final iteration of the game used the React JS framework to manage the single-page interface. This allowed the interface to be broken down into a series of structured components, which could be rendered asynchronously, and allowed for the use of Redux Stores, a means of persisting the client state after the page is closed and reloaded.
 
-The interface is comprised of a series of structured components. Stats.js handles the rendering of the statistics bar at the top of the interface, and also contains the timing component which forms the core of the simulation. GameMap.js handles the rendering of the map in the centre of the page, including buildings, characters and their thoughts. Sidebar.js renders a second set of statistics at the side of the page. Menus.js handles the rendering of menus, which change as the game progresses. Scripts.js renders interactions with the game's characters, and drives the main narrative element of the game.
+The interface is comprised of a series of structured components. \verb|Stats.js| handles the rendering of the statistics bar at the top of the interface, and also contains the timing component which forms the core of the simulation. \verb|GameMap.js| handles the rendering of the map in the centre of the page, including buildings, characters and their thoughts. \verb|Sidebar.js| renders a second set of statistics at the side of the page. \verb|Menus.js| handles the rendering of menus, which change as the game progresses. \verb|Scripts.js| renders interactions with the game's characters, and drives the main narrative element of the game.
 
-A set of `helper' files contain constants and helper functions, and do not relate to particular sections of the interface. `economics.js' is where the bulk of the backend calculations that drive the simulation are located. `characters.js', `buildings.js', `menus.js', `constants.js' store information about characters, buildings menus and numerical constants respectively.
+A set of `helper' files contain constants and helper functions, and do not relate to particular sections of the interface. \verb|economics.js| is where the bulk of the backend calculations that drive the simulation are located. \verb|characters.js|, \verb|buildings.js|, \verb|menus.js|, \verb|constants.js|. store information about characters, buildings menus and numerical constants respectively.
 
+
+
+\chapter{Evaluation}
 
 \section{Study Design}
 
@@ -645,8 +707,26 @@ The second study of the simulation game uses a concatenated version of the surve
 
 The card game is evaluated as a component of the Waste Pilot Scheme, as part of the initial workshop that took place on February 4th. The game was played toward the end of the workshop, by approximately 45 participants, split across 7 different tables. There was not time at the end of the workshop for a full group discussion post-game, but during play conversations were initiated at each table, where players were asked what they were thinking about while playing the game, and how the game had influenced their experience of and understanding of the workshop
 
+\section{Simulation Game Study}
+This study was conducted in the Media Lab, with the Object Based Media Group. 
 
-\bibliography{refs.bib} 
+Describe: number of participants, timing, approach
+
+This study was generously funded by MIT's Living Labs
+
+\subsection{Waste Audit}
+Describe: layout of space, layout of bins
+
+\subsection{Survey}
+
+\subsection{Analysis}
+
+\section{Card Game Study}
+This study was conducted in the Media Lab, with the Lifelong Kindergarten Group. 
+
+\subsection{}
+
+\bibliography{Thesis.bib} 
 
 \end{document}
 
