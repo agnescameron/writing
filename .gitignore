@@ -1,5 +1,6 @@
 ./img*
 img*
+*.lof
 *.aux
 *.bbl
 *.blg
