@@ -151,6 +151,11 @@ Bret Victor.
 Bret Victor.
 \newblock Explorable {Explanations}, 2011.
 
+\bibitem{rittel_dilemmas_1973}
+Horst W.~J. Rittel and Melvin~M. Webber.
+\newblock Dilemmas in a general theory of planning.
+\newblock {\em Policy Sciences}, 4(2):155--169, June 1973.
+
 \bibitem{schelling_dynamic_1971}
 Thomas~C. Schelling.
 \newblock Dynamic models of segregation.
@@ -199,6 +204,16 @@ Sherry~R. Arnstein.
 \newblock A {Ladder} {Of} {Citizen} {Participation}.
 \newblock {\em Journal of the American Institute of Planners}, 35(4):216--224,
   July 1969.
+
+\bibitem{mundano_pimp_nodate}
+Thiago Mundano.
+\newblock Pimp my {Carroça}.
+
+\bibitem{tremblay_united_2010}
+Crystal Tremblay, Jutta Gutberlet, and Ana~Maria Peredo.
+\newblock United {We} {Can}: {Resource} recovery, place and social enterprise.
+\newblock {\em Resources, Conservation and Recycling}, 54(7):422--428, May
+  2010.
 
 \bibitem{Gabrys_programming_2014}
 Jennifer Gabrys.
@@ -285,6 +300,10 @@ Francis Tseng and Vicky Osterweil.
 \bibitem{case_how_2016}
 Nicky Case.
 \newblock How {To} {Simulate} {The} {Universe} {In} 134 {Easy} {Steps}, 2016.
+
+\bibitem{case_parable_2015}
+Nicky Case and Vi~Hart.
+\newblock Parable of the {Polygons}, 2015.
 
 \bibitem{zero_waste_international_alliance_zero_2017}
 Zero Waste~International Alliance.
