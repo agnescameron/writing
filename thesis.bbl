@@ -4,6 +4,11 @@
 Mierle~Laderman Ukeles.
 \newblock Manifesto for {Maintenance} {Art} 1969!, 1969.
 
+\bibitem{onuoha_i_2016}
+Mimi Onuoha.
+\newblock I {Tried}, and {Failed}, to {Find} {Out} {Where} {My} {Electricity}
+  {Comes} {From}, February 2016.
+
 \bibitem{albeck-ripka_your_2018}
 Livia Albeck-Ripka.
 \newblock Your {Recycling} {Gets} {Recycled}, {Right}? {Maybe}, or {Maybe}
@@ -22,11 +27,6 @@ Oliver Milman.
   bans imports.
 \newblock {\em The Guardian}, February 2019.
 
-\bibitem{onuoha_i_2016}
-Mimi Onuoha.
-\newblock I {Tried}, and {Failed}, to {Find} {Out} {Where} {My} {Electricity}
-  {Comes} {From}, February 2016.
-
 \bibitem{offenhuber_waste_2017}
 Dietmar Offenhuber and Carlo Ratti.
 \newblock {\em Waste {Is} {Information}: {Infrastructure} {Legibility} and
@@ -34,16 +34,16 @@ Dietmar Offenhuber and Carlo Ratti.
 \newblock MIT Press, October 2017.
 \newblock Google-Books-ID: BLQ5DwAAQBAJ.
 
+\bibitem{delichatsios_trash_2011}
+Alki Delichatsios.
+\newblock Trash {Talkin}! {My} visit to the recycling facility. {\textbar}
+  {Watt} {Now}, September 2011.
+
 \bibitem{morawski_understanding_2009}
 Clarissa Morawski, Susan Collins, and Betty McLaughlin.
 \newblock Understanding {Economic} and {Environmental} {Impacts} of {Single}
   {Stream} {Collection} {Systems}.
 \newblock Technical report, Container Recycling Institute, 2009.
-
-\bibitem{delichatsios_trash_2011}
-Alki Delichatsios.
-\newblock Trash {Talkin}! {My} visit to the recycling facility. {\textbar}
-  {Watt} {Now}, September 2011.
 
 \bibitem{laskow_single-stream_2014}
 Sarah Laskow.
@@ -52,8 +52,8 @@ Sarah Laskow.
 
 \bibitem{martin_reverberations_2017}
 Ian Martin.
-\newblock Reverberations from {China}'s {National} {Sword} continue to widen
-  • {Recycling} {International}, August 2017.
+\newblock Reverberations from {China}'s {National} {Sword} continue to widen,
+  August 2017.
 
 \bibitem{mattern_instrumental_2016}
 Shannon Mattern.
@@ -76,6 +76,11 @@ Zeynep Tufekci.
   {Networked} {Protest}}.
 \newblock Yale University Press, May 2017.
 \newblock Google-Books-ID: x7S\_DgAAQBAJ.
+
+\bibitem{mattern_infrastructural_2013}
+Shannon Mattern.
+\newblock Infrastructural {Tourism}.
+\newblock {\em Places Journal}, July 2013.
 
 \bibitem{liboiron_why_2014}
 Max Liboiron.
@@ -113,6 +118,12 @@ Jim Reardon.
 \newblock Trash of the {Titans}, 1998.
 \newblock IMDb ID: tt0701277.
 
+\bibitem{calvino_invisible_1974}
+Italo Calvino.
+\newblock {\em Invisible {Cities}}.
+\newblock Houghton Mifflin Harcourt, 1974.
+\newblock Google-Books-ID: Pn8d9riSL6UC.
+
 \bibitem{ukeles_touch_1980}
 Mierle~Laderman Ukeles.
 \newblock Touch {Sanitation} {Performance}, 1980.
@@ -130,11 +141,6 @@ Holland Cotter.
 \newblock An {Artist} {Redefines} {Power}. {With} {Sanitation} {Equipment}.
 \newblock {\em The New York Times}, December 2017.
 
-\bibitem{scott_seeing_1998}
-James~C. Scott.
-\newblock {\em Seeing {Like} a {State}}.
-\newblock Yale University Press, New Haven and London, 1998.
-
 \bibitem{kofman_les_2014}
 Ava Kofman.
 \newblock Les {Simerables}, October 2014.
@@ -143,13 +149,18 @@ Ava Kofman.
 Kevin Baker.
 \newblock Model {Metropolis}, January 2019.
 
+\bibitem{victor_explorable_2011}
+Bret Victor.
+\newblock Explorable {Explanations}, 2011.
+
 \bibitem{victor_ten_2010}
 Bret Victor.
 \newblock Ten {Brighter} {Ideas}? {An} {Explorable} {Explanation}, March 2010.
 
-\bibitem{victor_explorable_2011}
-Bret Victor.
-\newblock Explorable {Explanations}, 2011.
+\bibitem{forrester_urban_1969}
+Jay~Wright Forrester.
+\newblock {\em Urban {Dynamics}}.
+\newblock MIT Press, Cambridge, MA, 1969.
 
 \bibitem{rittel_dilemmas_1973}
 Horst W.~J. Rittel and Melvin~M. Webber.
@@ -194,6 +205,69 @@ Livia Albeck-Ripka.
 \newblock 6 {Things} {You}’re {Recycling} {Wrong}.
 \newblock {\em The New York Times}, October 2018.
 
+\bibitem{haque_notes_2008}
+Usman Haque.
+\newblock Notes on the {Design} of {Participatory} {Systems} -- for the {City}
+  or for the {Planet}.
+\newblock Technical report, 2008.
+
+\bibitem{ajzen_theory_1991}
+Icek Ajzen.
+\newblock The theory of planned behavior.
+\newblock {\em Organizational Behavior and Human Decision Processes},
+  50(2):179--211, December 1991.
+
+\bibitem{bandura_self-efficacy_1982}
+Albert Bandura.
+\newblock Self-efficacy mechanism in human agency.
+\newblock {\em American Psychologist}, 37(2):122--147, 1982.
+
+\bibitem{zuckerman_mobilizing_2019}
+Ethan Zuckerman.
+\newblock {\em Mobilizing {Mistrust}}.
+\newblock 2019.
+
+\bibitem{stern_managing_1987}
+PC~Stern and Stuart Oskamp.
+\newblock Managing {Environmental} {Resources}.
+\newblock In {\em Handbook of {Environmental} {Psychology}}, pages 1043--1088.
+  Wiley, New York, 1987.
+
+\bibitem{guagnano_influences_1995}
+Gregory~A. Guagnano, Paul~C. Stern, and Thomas Dietz.
+\newblock Influences on {Attitude}-{Behavior} {Relationships}: {A} {Natural}
+  {Experiment} with {Curbside} {Recycling}.
+\newblock {\em Environment and Behavior}, 27(5):699--718, September 1995.
+
+\bibitem{Kline_rationalizing_1988}
+Stephen Kline, Ont.) York University~(Toronto, and {Faculty of Environmental
+  Studies}.
+\newblock {\em Rationalizing attitude discrepant behaviour: a case study in
+  energy attitudes}.
+\newblock Faculty of Environmental Studies, York University, North York, Ont.,
+  1988.
+\newblock OCLC: 222508980.
+
+\bibitem{Hornik_determinants_1995}
+Jacob Hornik, Joseph Cherian, Michelle Madansky, and Chem Narayana.
+\newblock Determinants of recycling behavior: {A} synthesis of research
+  results.
+\newblock {\em The Journal of Socio-Economics}, 24(1):105--127, March 1995.
+
+\bibitem{zero_waste_international_alliance_zero_2017}
+Zero Waste~International Alliance.
+\newblock Zero {Waste}, 2017.
+
+\bibitem{aia_new_york_zero_2017}
+AIA~New York, Kiss+Cathcart, ClosedLoops, and Foodprint Group.
+\newblock Zero {Waste} {Design} {Guidelines}.
+\newblock Technical report, 2017.
+
+\bibitem{benninger_divertsy_2019}
+Corey Benninger.
+\newblock {DIVERTsy} {Android} {Client}, March 2019.
+\newblock original-date: 2017-04-11T19:00:49Z.
+
 \bibitem{krivy_participatory_2013}
 Maroš Krivý and Tahl Kaminer.
 \newblock The {Participatory} {Turn} in {Urbanism} ({Introduction}).
@@ -231,6 +305,15 @@ Josh Lepawsky.
 \newblock The changing geography of global trade in electronic discards: time
   to rethink the e-waste problem.
 \newblock {\em The Geographical Journal}, 181(2):147--159, June 2015.
+
+\bibitem{foucault_other_1967}
+Michel Foucault.
+\newblock Of {Other} {Spaces}: {Utopias} and {Heterotopias}.
+\newblock {\em Diacritics}, 16(1):22--27, 1967.
+
+\bibitem{detar_mapping_2011}
+Charlie DeTar.
+\newblock Mapping the {Space} of {Location}-{Based} {Services}, 2011.
 
 \bibitem{sterman_john_2013}
 John Sterman.
@@ -297,6 +380,13 @@ Scot Osterweil.
 Francis Tseng and Vicky Osterweil.
 \newblock The {Founder}, November 2017.
 
+\bibitem{gee_what_2004}
+James~Paul Gee.
+\newblock {\em What {Video} {Games} {Have} to {Teach} {Us} about {Learning} and
+  {Literacy}}.
+\newblock Palgrave Macmillan, January 2004.
+\newblock Google-Books-ID: BZIY7TGKySsC.
+
 \bibitem{case_how_2016}
 Nicky Case.
 \newblock How {To} {Simulate} {The} {Universe} {In} 134 {Easy} {Steps}, 2016.
@@ -304,69 +394,6 @@ Nicky Case.
 \bibitem{case_parable_2015}
 Nicky Case and Vi~Hart.
 \newblock Parable of the {Polygons}, 2015.
-
-\bibitem{zero_waste_international_alliance_zero_2017}
-Zero Waste~International Alliance.
-\newblock Zero {Waste}, 2017.
-
-\bibitem{haque_notes_2008}
-Usman Haque.
-\newblock Notes on the {Design} of {Participatory} {Systems} -- for the {City}
-  or for the {Planet}.
-\newblock Technical report, 2008.
-
-\bibitem{ajzen_theory_1991}
-Icek Ajzen.
-\newblock The theory of planned behavior.
-\newblock {\em Organizational Behavior and Human Decision Processes},
-  50(2):179--211, December 1991.
-
-\bibitem{bandura_self-efficacy_1982}
-Albert Bandura.
-\newblock Self-efficacy mechanism in human agency.
-\newblock {\em American Psychologist}, 37(2):122--147, 1982.
-
-\bibitem{zuckerman_mobilizing_2019}
-Ethan Zuckerman.
-\newblock {\em Mobilizing {Mistrust}}.
-\newblock 2019.
-
-\bibitem{stern_managing_1987}
-PC~Stern and Stuart Oskamp.
-\newblock Managing {Environmental} {Resources}.
-\newblock In {\em Handbook of {Environmental} {Psychology}}, pages 1043--1088.
-  Wiley, New York, 1987.
-
-\bibitem{guagnano_influences_1995}
-Gregory~A. Guagnano, Paul~C. Stern, and Thomas Dietz.
-\newblock Influences on {Attitude}-{Behavior} {Relationships}: {A} {Natural}
-  {Experiment} with {Curbside} {Recycling}.
-\newblock {\em Environment and Behavior}, 27(5):699--718, September 1995.
-
-\bibitem{Kline_rationalizing_1988}
-Stephen Kline, Ont.) York University~(Toronto, and {Faculty of Environmental
-  Studies}.
-\newblock {\em Rationalizing attitude discrepant behaviour: a case study in
-  energy attitudes}.
-\newblock Faculty of Environmental Studies, York University, North York, Ont.,
-  1988.
-\newblock OCLC: 222508980.
-
-\bibitem{Hornik_determinants_1995}
-Jacob Hornik, Joseph Cherian, Michelle Madansky, and Chem Narayana.
-\newblock Determinants of recycling behavior: {A} synthesis of research
-  results.
-\newblock {\em The Journal of Socio-Economics}, 24(1):105--127, March 1995.
-
-\bibitem{aia_new_york_zero_2017}
-AIA~New York, Kiss+Cathcart, ClosedLoops, and Foodprint Group.
-\newblock Zero {Waste} {Design} {Guidelines}.
-\newblock Technical report, 2017.
-
-\bibitem{benninger_divertsy_2019}
-Corey Benninger.
-\newblock {DIVERTsy} {Android} {Client}, March 2019.
-\newblock original-date: 2017-04-11T19:00:49Z.
 
 \bibitem{friedricekid_is_2017}
 friedricekid.
@@ -382,6 +409,17 @@ Yukio Hirose, Junkichi Sugiura, and Kenji Shimomoto.
   effect.
 \newblock {\em Journal of Material Cycles and Waste Management}, 6(1):58--63,
   March 2004.
+
+\bibitem{gaber_simulating_2007}
+John Gaber.
+\newblock Simulating {Planning}: {SimCity} as a {Pedagogical} {Tool}.
+\newblock {\em Journal of Planning Education and Research}, 27(2):113--121,
+  December 2007.
+
+\bibitem{lobo_city_2004}
+Daniel Lobo.
+\newblock A {City} is not a {Toy}: {How} {SimCity} {Plays} {With} {Urbanism}.
+\newblock {\em The Next American City: Cities \& Technology}, (6), 2004.
 
 \bibitem{noauthor_garbage_2013}
 Garbage {Incinerator} - {SimCity} {Wiki} - {SimCity} 5 {Community} {Wiki} and
