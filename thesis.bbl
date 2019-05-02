@@ -167,6 +167,13 @@ Horst W.~J. Rittel and Melvin~M. Webber.
 \newblock Dilemmas in a general theory of planning.
 \newblock {\em Policy Sciences}, 4(2):155--169, June 1973.
 
+\bibitem{schaminee_designing_2018}
+André Schaminée.
+\newblock {\em Designing {With}(in) {Public} {Organizations}: {Building}
+  {Bridges} {Between} {Public} {Sector} {Innovators} and {Designers}}.
+\newblock Bis B.V., Uitgeverij (BIS Publishers), November 2018.
+\newblock Google-Books-ID: ew2BswEACAAJ.
+
 \bibitem{schelling_dynamic_1971}
 Thomas~C. Schelling.
 \newblock Dynamic models of segregation.
@@ -268,6 +275,11 @@ Corey Benninger.
 \newblock {DIVERTsy} {Android} {Client}, March 2019.
 \newblock original-date: 2017-04-11T19:00:49Z.
 
+\bibitem{price_technology_1979}
+Cedric Price.
+\newblock Technology {Is} {The} {Answer} {But} {What} {Was} {The} {Question}?,
+  1979.
+
 \bibitem{krivy_participatory_2013}
 Maroš Krivý and Tahl Kaminer.
 \newblock The {Participatory} {Turn} in {Urbanism} ({Introduction}).
@@ -315,9 +327,19 @@ Michel Foucault.
 Charlie DeTar.
 \newblock Mapping the {Space} of {Location}-{Based} {Services}, 2011.
 
-\bibitem{sterman_john_2013}
-John Sterman.
-\newblock John {Sterman} on the {Power} of {Simulations}, November 2013.
+\bibitem{haque_citizen_2017}
+Usman Haque.
+\newblock Citizen {Empowerment} through {Cultural} {Infrastructure}.
+\newblock In {\em 4D {Hyperlocal}: {A} {Cultural} {Tool} {Kit} for the
+  {Open}-source {City}}. John Wiley \& Sons, March 2017.
+\newblock Google-Books-ID: 4dqHDgAAQBAJ.
+
+\bibitem{jameson_postmodernism_1991}
+Fredric Jameson.
+\newblock {\em Postmodernism, {Or}, {The} {Cultural} {Logic} of {Late}
+  {Capitalism}}.
+\newblock Duke University Press, 1991.
+\newblock Google-Books-ID: oRJ9fh9BK8wC.
 
 \bibitem{macklin_games_2013}
 Colleen Macklin.
@@ -363,6 +385,10 @@ Joe Shaw and Mark Graham.
 \bibitem{play_the_city_play_2013}
 Play~The City.
 \newblock Play {Oosterwold}, 2013.
+
+\bibitem{sterman_john_2013}
+John Sterman.
+\newblock John {Sterman} on the {Power} of {Simulations}, November 2013.
 
 \bibitem{lantz_universal_2017}
 Frank Lantz.
