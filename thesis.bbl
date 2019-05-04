@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{ukeles_manifesto_1969}
 Mierle~Laderman Ukeles.
@@ -8,6 +8,17 @@ Mierle~Laderman Ukeles.
 Mimi Onuoha.
 \newblock I {Tried}, and {Failed}, to {Find} {Out} {Where} {My} {Electricity}
   {Comes} {From}, February 2016.
+
+\bibitem{waste_business_journal_waste_2017}
+Waste~Business Journal.
+\newblock Waste {Generation}, {Recovery}, {Disposal} and {Pricing} {Report}
+  (2016 {Data}).
+\newblock Technical report, Waste Business Journal, 2017.
+
+\bibitem{epa_advancing_2018}
+{EPA}.
+\newblock Advancing {Sustainable} {Materials} {Management}: 2015 {Fact}
+  {Sheet}, 2018.
 
 \bibitem{albeck-ripka_your_2018}
 Livia Albeck-Ripka.
@@ -26,6 +37,23 @@ Oliver Milman.
 \newblock '{Moment} of reckoning': {US} cities burn recyclables after {China}
   bans imports.
 \newblock {\em The Guardian}, February 2019.
+
+\bibitem{casella_2018_2018}
+Casella.
+\newblock 2018 {SUSTAINABILITY} {REPORT}.
+\newblock Technical report, Casella Waste Systems, Inc, 2018.
+
+\bibitem{rittel_dilemmas_1973}
+Horst W.~J. Rittel and Melvin~M. Webber.
+\newblock Dilemmas in a general theory of planning.
+\newblock {\em Policy Sciences}, 4(2):155--169, June 1973.
+
+\bibitem{schaminee_designing_2018}
+André Schaminée.
+\newblock {\em Designing {With}(in) {Public} {Organizations}: {Building}
+  {Bridges} {Between} {Public} {Sector} {Innovators} and {Designers}}.
+\newblock Bis B.V., Uitgeverij (BIS Publishers), November 2018.
+\newblock Google-Books-ID: ew2BswEACAAJ.
 
 \bibitem{offenhuber_waste_2017}
 Dietmar Offenhuber and Carlo Ratti.
@@ -76,6 +104,11 @@ Zeynep Tufekci.
   {Networked} {Protest}}.
 \newblock Yale University Press, May 2017.
 \newblock Google-Books-ID: x7S\_DgAAQBAJ.
+
+\bibitem{tsing_friction_2005}
+Anna~Lowenhaupt Tsing.
+\newblock {\em Friction: {An} {Ethnography} of {Global} {Connection}}.
+\newblock Princeton University Press, 2005.
 
 \bibitem{mattern_infrastructural_2013}
 Shannon Mattern.
@@ -157,22 +190,20 @@ Bret Victor.
 Bret Victor.
 \newblock Ten {Brighter} {Ideas}? {An} {Explorable} {Explanation}, March 2010.
 
+\bibitem{meadows_thinking_2008}
+Donella~H. Meadows.
+\newblock {\em Thinking in {Systems}: {A} {Primer}}.
+\newblock Chelsea Green Publishing, 2008.
+\newblock Google-Books-ID: CpbLAgAAQBAJ.
+
 \bibitem{forrester_urban_1969}
 Jay~Wright Forrester.
 \newblock {\em Urban {Dynamics}}.
 \newblock MIT Press, Cambridge, MA, 1969.
 
-\bibitem{rittel_dilemmas_1973}
-Horst W.~J. Rittel and Melvin~M. Webber.
-\newblock Dilemmas in a general theory of planning.
-\newblock {\em Policy Sciences}, 4(2):155--169, June 1973.
-
-\bibitem{schaminee_designing_2018}
-André Schaminée.
-\newblock {\em Designing {With}(in) {Public} {Organizations}: {Building}
-  {Bridges} {Between} {Public} {Sector} {Innovators} and {Designers}}.
-\newblock Bis B.V., Uitgeverij (BIS Publishers), November 2018.
-\newblock Google-Books-ID: ew2BswEACAAJ.
+\bibitem{liboiron_trash_2012}
+Max Liboiron.
+\newblock Trash is a {Wicked} {Problem}, December 2012.
 
 \bibitem{schelling_dynamic_1971}
 Thomas~C. Schelling.
@@ -356,6 +387,10 @@ Jim Dunnigan.
 Buckminster~Fuller Institute.
 \newblock About {Fuller}: {WORLD} {GAME}.
 
+\bibitem{sterman_john_2013}
+John Sterman.
+\newblock John {Sterman} on the {Power} of {Simulations}, November 2013.
+
 \bibitem{roy_video_2019}
 Jessica Roy.
 \newblock From video game to day job: {How} ‘{SimCity}’ inspired a
@@ -385,10 +420,6 @@ Joe Shaw and Mark Graham.
 \bibitem{play_the_city_play_2013}
 Play~The City.
 \newblock Play {Oosterwold}, 2013.
-
-\bibitem{sterman_john_2013}
-John Sterman.
-\newblock John {Sterman} on the {Power} of {Simulations}, November 2013.
 
 \bibitem{lantz_universal_2017}
 Frank Lantz.
@@ -450,6 +481,13 @@ Daniel Lobo.
 \bibitem{noauthor_garbage_2013}
 Garbage {Incinerator} - {SimCity} {Wiki} - {SimCity} 5 {Community} {Wiki} and
   {Guide}, 2013.
+
+\bibitem{lerner_making_2014}
+Josh Lerner.
+\newblock {\em Making {Democracy} {Fun}: {How} {Game} {Design} {Can} {Empower}
+  {Citizens} and {Transform} {Politics}}.
+\newblock MIT Press, February 2014.
+\newblock Google-Books-ID: 5efaAgAAQBAJ.
 
 \bibitem{perlman_material_2016}
 Rachel Perlman and MIT~Office of~Sustainability.
