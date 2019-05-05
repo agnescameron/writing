@@ -6,6 +6,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{titletoc}
+\usepackage[super]{nth}
 \captionsetup{compatibility=false, font=footnotesize}
 \captionsetup[subfigure]{labelfont=bf,singlelinecheck=off,labelsep = space}
 \setcounter{tocdepth}{2}
@@ -85,7 +86,7 @@
 
 \chapter*{Abstract}
 
-If Waste is Information, what can be learned from an understanding of maintenance at MIT as a complex information system? Through engaging students with flows of waste and their role within a waste system, can relations to and practices of waste management change? Working with communities that manage waste on campus, this project focusses on making legible processes of production, circulation and disposal of waste around MIT, through the medium of a simulation game. This game does not seek to represent an entire waste system, but instead, a small segment of one: solid waste management on the MIT Campus.
+If \emph{Waste is Information}, what can be learned from an understanding of maintenance at MIT as a complex information system? Through engaging students with flows of waste and their role within a waste system, can relations to and practices of waste management change? Working with communities that manage waste on campus, this project focusses on making legible processes of production, circulation and disposal of waste around MIT, through the medium of a simulation game. This game does not seek to represent an entire waste system, but instead, a small segment of one: solid waste management on the MIT Campus.
 
 The aim of this work is to engage participants in changing both behaviours around, and attitudes toward campus waste systems. Though geared toward students at MIT, the ideas explored in these games apply to anyone interested in learning more about how we waste, and the scope and consequences of our actions.
 
@@ -167,13 +168,6 @@ In this chapter, I take representation as a point of departure to examine the co
 
 \subsection*{When smart is not enough}
 
-\begin{marginfigure}
-\includegraphics[width=\textwidth]{img/1/casella-bales.jpg}
-\vspace{0.6cm}
-\includegraphics[width=\textwidth]{img/1/casella-sorting.jpg}
-\caption{Baled recycling and manual sorting in Casella's Mixed Recycling Facility \cite{delichatsios_trash_2011} \label{b}}
-\end{marginfigure}
-
 \begin{flushright}
 % \begin{minipage}[b]{0.8\textwidth}
 \begin{flushright}
@@ -182,6 +176,13 @@ Claire Morawski, Container Recycling Association
 \end{flushright}
 % \end{minipage}[b]{0.8\textwidth}
 \end{flushright}
+
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/1/casella-bales.jpg}
+\vspace{1cm}
+\includegraphics[width=\textwidth]{img/1/casella-sorting.jpg}
+\caption{Baled recycling and manual sorting in Casella's Mixed Recycling Facility \cite{delichatsios_trash_2011} \label{b}}
+\end{marginfigure}
 
 Single stream recycling was developed in California in the 1990s, and has since become the dominant form of recycling in the United States \cite{laskow_single-stream_2014}. Initially lauded for increasing the rates of collection of recyclable materials, and decreasing the load on curbside collection rounds, the efficacy of single-stream as a means of preserving resources is not as clear. Single-stream recycling allows all recycling to be placed in the same container, processed together at a Mixed Recycling Facility (MRF) by a combination of machinery and human sorting. The issue with MRFs is that, while it is possible to sort waste streams from one another, for many materials the eventual quality of the reclaimed product is significantly lower than if they had been processed separately \cite{morawski_understanding_2009}. During the growth of single-stream recycling, this was less of a problem: countries such as China were prepared to buy and process lower-quality baled stock, making this an economically viable option for processing large quantities of recycling. However, China's ``National Sword'' program has significantly reduced the market for some forms of poor-quality recycling (in particular plastics), leading to a large proportion of recycling in the United States going to landfill or incineration, and throwing the efficacy of single-stream into question.
 
@@ -202,6 +203,7 @@ This is not to say, of course, that it is not important to build technologies th
 There is a tendency in infrastructural systems to obscure the `hard parts': be they human labour, piles of trash, server farms or fibre-optic cables \cite{mattern_infrastructural_2013}. We make custodial workers come in late at night, export our waste to where we can't see it, and bury the mounds of cable, silicon and glass that we use to support our `connected' lives underground. Not only is the direct effect on the affected communities and ecosystems (those without the option to hide the real effects of these infrastructures) harmful \cite{liboiron_why_2014}, but in making these processes `like magic' we also remove a sense of collective responsibility for them.
 
 %wendy chun?
+\subsection*{Seeing Waste}
 
 \begin{flushright}
 \begin{minipage}[b]{0.8\textwidth}
@@ -213,9 +215,6 @@ Kevin Lynch
 \end{flushright}
 \end{minipage}
 \end{flushright}
-
-
-\subsection*{Seeing Waste}
 
 In his 1990 book \emph{Wasting Away}\cite{lynch_wasting_1990}, urbanist Kevin Lynch writes extensively on how we see waste, asking what it might mean to `waste well' -- to be at peace with our relationship with waste, and deal with it thoughtfully and rationally. In a similar manner to his more famous work \emph{The Image of the City} (in which he studies the mental models that we construct of urban spaces) \cite{lynch_image_1960}, so Lynch writes at length on the disparity between our imagination of waste systems, and their actual operation. He argues that wasting is a cultural construct, one overloaded with emotion and anxiety, thus making its related habits hard to shift.
 
@@ -288,13 +287,13 @@ Max Liboiron
 \caption{A still from Sim City 2000 \label{b}}
 \end{marginfigure}
 
-The term infrastructure legibility was coined by Dietmar Offenhuber in his book Waste Is Information \cite{offenhuber_waste_2017}, to refer to the problem of representing civic infrastructures too complex to be understood in their entirety. This is an idea that draws heavily from Lynch, who defines the ``legibility'' of a system as ``the ease with which its parts can be recognised and can be organised into a coherent pattern''. 
+The term infrastructure legibility was coined by Dietmar Offenhuber in his book \emph{Waste Is Information}, to refer to the problem of representing civic infrastructures too complex to be understood in their entirety \cite{offenhuber_waste_2017}. This is an idea that draws heavily from Lynch, who defines the ``legibility'' of a system as ``the ease with which its parts can be recognised and can be organised into a coherent pattern''. 
 
 %make this a bit more nuanced >>
 
 There is, of course, a tension between creating a legible representation, and over-simplifying a narrative. It is also worth asking: for and by whom is a system being made legible? Representations can inherently encode the assumptions or biases of the author: for example, Ava Kofman notes that the `advice' in SimCity 4's manual coerces a particular political viewpoint \cite{kofman_les_2014}. As one player put it in an interview with Los Angeles Times in 1992 ``I became a total Republican playing this game. All I wanted was for my city to grow, grow, grow.''\cite{Baker_model_2019}
 
-Bret Victor's essay Explorable Explanations goes some way towards addressing these issues: by providing people with tools to interrogate the assumptions behind a particular representation, Victor proposes that one might draw a more nuanced conclusion. Instead of seeing a particular piece of information as ``right or wrong'', ``bad or good'','' a representation becomes ``one point in a large space of possibilities.'' Victor terms this `active reading', transforming a text from something to be read, to ``an environment to think in'' \cite{victor_explorable_2011}. Offenhuber is not alone in advocating for a `systems perspective' on waste: popular framings of waste systems such as `Lifecycle Management' and the `Circular Economy' both draw heavily on concepts from systems theory to address the complexity inherent in sustainable decision-making.
+Bret Victor's essay \emph{Explorable Explanations} goes some way towards addressing these issues: by providing people with tools to interrogate the assumptions behind a particular representation, Victor proposes that one might draw a more nuanced conclusion. Instead of seeing a particular piece of information as ``right or wrong'', ``bad or good'','' a representation becomes ``one point in a large space of possibilities.'' Victor terms this `active reading', transforming a text from something to be read, to ``an environment to think in'' \cite{victor_explorable_2011}. Offenhuber is not alone in advocating for a `systems perspective' on waste: popular framings of waste systems such as `Lifecycle Management' and the `Circular Economy' both draw heavily on concepts from systems theory to address the complexity inherent in sustainable decision-making.
 
 %%IMAGE TO ADD:a brighter idea
 \begin{marginfigure}
@@ -387,6 +386,8 @@ It is through taking such a systems perspective on waste that we might participa
 
 Since around the 1970's (which marked the passing of the Resource Conservation and Recovery Act in the United States), the problem of municipal waste has been linked both to personal responsibility, and to an environmental cause. At present, the minimisation of municipal solid waste is broadly framed as a co-operative problem in which we are all expected to play a role. Interventions into waste streams can take place at the site of production (for example, minimising wastes created by industrial processes and logistics), the site of consumption (encouraging consumers to buy less, or reuse), and the site of disposal (recycle, compost). As has been observed by Liboiron \cite{liboiron_against_2014}, when it comes to civic education, focus tends toward changing habits of disposal, despite its relative ineffectiveness when compared to consumption, or changing the industrial context in the first place. The `waste hierarchy' model is often used to illustrate relative merits of different diversion strategies, distinguishing between Reduction, Reuse, Recycling and Recovery.
 
+Offenhuber writes that ``Waste systems cannot be separated from systems of production, and notions of value cannot be seen in isolation.'', advocating for a `whole-systems' approach to waste infrastructure. Here, 
+
 % and disposable packaging economic externalities
 
 \begin{marginfigure}
@@ -476,6 +477,10 @@ Interventions in the document are classified according to a set of best-practice
 
 Throughout the report, successful case studies were highly tailored to a local context, reliant on an understanding of the specific concerns and challenges of the local populace. In Etsy's case, an audit of landfill waste from the building showed a high proportion of non-recyclable/compostable containers from local coffee shops. In response to this, the building provided staff with free re-usable cups, and provides regular information as to which vendors give a discount to customers bringing their own crockery.
 
+There are multiple other examples of incentive schemes that target the `external facilitators' discussed by Hornik et. al. Successful examples include 
+
+Here, by re-framing recyclable materials as a commodity, they are given an economic value in the eyes of the consumer. Scandinavia, USA
+
 \section*{Taking Part in Cities}
 What does it mean to take part in a civic system? If an issue in our attitudes towards and behaviours around waste is one of attention, then modes of engagement that focus attention around particular issues, dynamics and problems are of particular interest. In this section, I explore theories of participation, with a focus on the use of games and play as a means of making legible otherwise dull, inaccessible or obscure processes. While here I explore ideas within the field of urbanism, these concepts may also be applied to other forms of civic and political participation.
 
@@ -502,7 +507,7 @@ Kevin Lynch
 
 A key idea in participatory urbanism is that ownership of and participation in the management of a system can increase the effectiveness of various interventions to that system. Forms of participatory waste management range from digital reporting systems \cite{offenhuber_waste_2017}, to community work with recycling collectors \cite{tremblay_united_2010, mundano_pimp_nodate}, to actively engaging volunteers in recording and managing waste streams, and educating their peers \cite{offenhuber_waste_2017}. 
 
-In Waste is Information, Offenhuber examines the role of interfaces between citizens and governments in `participatory' waste collection systems, making the argument that the politics of representation of a system require a set of common protocols, understood by all participants. Using the example of a participatory waste project in Boston, where infratructure failures were crowdsourced from residents through a mobile app, he critiques the notion of decentralisation for decentralisation's sake, arguing that the fragmentation of urban services can create the kind of inequality it might purport to dynamically address \cite{offenhuber_waste_2017}. Jennifer Gabrys, too, explores how well-meaning citizen science projects can nonetheless end up using people as a cheap means of producing data for somebody else, rather than projects that give back as much as they demand from participants. \cite{Gabrys_programming_2014}
+In \emph{Waste is Information}, Offenhuber examines the role of interfaces between citizens and governments in `participatory' waste collection systems, making the argument that the politics of representation of a system require a set of common protocols, understood by all participants. Using the example of a participatory waste project in Boston, where infratructure failures were crowdsourced from residents through a mobile app, he critiques the notion of decentralisation for decentralisation's sake, arguing that the fragmentation of urban services can create the kind of inequality it might purport to dynamically address \cite{offenhuber_waste_2017}. Jennifer Gabrys, too, explores how well-meaning citizen science projects can nonetheless end up using people as a cheap means of producing data for somebody else, rather than projects that give back as much as they demand from participants. \cite{Gabrys_programming_2014}
 
 %IMAGE TO ADD: trash track
 \begin{marginfigure}
@@ -558,6 +563,11 @@ In \emph{Postmodernism}, Frederic Jameson reflects on what Lynch's cognitive map
 
 In \emph{WORLD CLIMATE: A Role-Play Simulation of Climate Negotiations}, Sterman et. al make the case for representing climate change through simulation, as it is impossible to learn from either controlled experiments, or experience \cite{sterman_world_2015}. Colleen Macklin of the New School's PETLab also makes the case for simulation and role-play in \emph{Games for a New Climate}, in which she worked with the Red Cross/Red Crescent to make playful simulations of decision-making in the context of climate-related disasters. Macklin terms games as the `pop cultural medium of systems', a mode of participatory simulation that comprises ``one of the more important strategies for connecting knowledge to action'' \cite{macklin_games_2013}.
 
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/1/macklin-climate.jpg}
+\caption{A photograph of gameplay from Colleen Macklin's \emph{Games for a New Climate} in Katima Mulilo, Namibia \cite{macklin_games_2013}}
+\end{marginfigure}
+
 'Serious' or `civic' games (here I choose the latter term) and simulations have become an increasingly popular mode of engagement for participatory projects in recent decades \cite{krivy_participatory_2013}. In his talk ???, Francis Tseng ???
 Nicky Case, Colleen Macklin, Sterman
 
@@ -570,36 +580,47 @@ While there are numerous use cases for these games, here I will focus on games i
 \caption{The board from Jim Dunnigan and Jerry Avorn's \emph{Up Against The Wall, Motherfuckers}\label{b} \cite{dunnigan_few_1969}}
 \end{marginfigure}
 
-60s history of games
-
 %add a sentence before `assuming'
-The `simulation video game' as a consumer product originates from the late 1980s, when games such as SimCity proved surprisingly popular amongst players, though simulation games themselves have a much longer history, appearing in the US Military's `Operations Research' archives, the `World Game' proposed by Buckminster-Fuller\cite{buckminster_fuller_institute_about_nodate}, and as satirical commentary on current affairs. \sidenote{Jim Dunnigan's \emph{Up Against the wall, Motherfuckers} is one such example: a simulation game that modelled possible outcomes of the previous years' campus occupation at Columbia University, led by the eponymous anarchist group. The game was included as a supplement to the April 1969 edition of the Columbia Daily Spectator \cite{dunnigan_few_1969}} Contemporaneous with the emergence of participatory planning, 1960s activist organisations such as the New Games Movement saw games as a tool for direct action, as well as systems simulation. 
 
-\subsection*{Simulation Games}
+%making democracy fun
+The `simulation video game' as a consumer product originates from the late 1980s, when games such as SimCity proved surprisingly popular amongst players, though simulation games themselves have a much longer history. Arguably, strategic `war games' are some of the oldest forms of simulation game, with games such as Prussian King Frederick the Great's \emph{Kriegsspiel} used as strategic tools from the early \nth{19} Century. \cite{landa_war_1991}
+
+In the 1960's, the simulation game gained popularity as a management and learning tool, appearing in the US Military's `Operations Research' archives\cite{landa_war_1991}, in the `World Game' proposed by Buckminster-Fuller\cite{buckminster_fuller_institute_about_nodate}, as a utopian activist tool \cite{johnson_inside_2013}, and as satirical commentary on current affairs\cite{dunnigan_few_1969}. \sidenote{Jim Dunnigan's \emph{Up Against the wall, Motherfuckers} is one such example: a simulation game that modelled possible outcomes of the previous years' campus occupation at Columbia University, led by the eponymous anarchist group. The game was included as a supplement to the April 1969 edition of the Columbia Daily Spectator \cite{dunnigan_few_1969}} 
+Contemporaneous with the emergence of participatory planning, 1960s activist organisations such as the New Games Movement saw games as a tool for direct action, as well as systems simulation \cite{johnson_inside_2013}. 
+
+\subsection*{Participatory Simulation}
 
 \begin{flushright}
 \emph{``I could never have told them that and had any impact. They had to discover it for themselves.''}\cite{sterman_john_2013}\\
 John Sterman
 \end{flushright}
 
-In the case of simulation, games can form a popular medium for modelling: a way for people not just to simulate a system to learn about its workings, but to actively participate in playing out the consequences of particular courses of action. SimCity is often credited for inspiring a generation of urban planners captivated by their role in a simulated local government \cite{roy_video_2019}. However, as a tool of representation, these games are not neutral: common critiques of SimCity are that it assumes an urban system planned and controlled from above, and that the closed nature of the underlying algorithm, a `black box' does not allow the player to question the underling assumptions of the game's maker \cite{starr_seductions_1994}.
-
-In her book \emph{Negotiation and Design for the Self-Organising City}, architect Ekim Tan asks us to re-consider urban games (such as SimCity) in a more open-ended context, advocating for `city gaming' as an accessible tool for engaging communities in urban planning exercises \cite{tan_negotiation_2014}. Tan's city games occupy a spectrum between educational and planning tools, including awareness-raising exercises about mass migration, educational games about successful affordable housing policies, and consultation on making new developments more bicycle- and pedestrian-friendly. Play the City is intended to `accelerate consensus' between stakeholders with conflicting interests, bringing together citizens, planners and policymakers in collective decision-making exercises, constrained by a rule-set that is tailored to the problem they are trying to solve \cite{tan_city_2017}. However, in generating the rules of the game, the asking of more basic questions e.g. `Should this development exist in the first place' is essential for true (rather than tokenistic) democracy \cite{shaw_informational_2017}.
-
-Along similar lines, Josh Lerner's \emph{Making Democracy Fun} explores the use of game design principles in democratic participation, making a distinction between games as \emph{metaphor}: games used to explain and represent political processes, and games as \emph{method}: making the political process a game in and of itself.
-
 \begin{marginfigure}
 \includegraphics[width=\textwidth]{img/1/play-oosterwald.jpg}
 \caption{Participants in the City Game `Play Oosterwald', a participatory planning exercise to design a new, green town in the Municipality of Almere, Netherlands \label{b} \cite{play_the_city_play_2013}}
 \end{marginfigure}
 
-Participatory simulations such as John Sterman's `World Climate' scenarios sit somewhere between metaphor and method, using complex climate models to guide participants (typically politicians, policymakers and academics) through a range of scenarios. Based directly on climate science, World Climate seeks to get participants to `draw their own conclusions', about emissions policy, rather than attempt to argue the point with words \cite{sterman_john_2013}. While these games might not be directly used as part of the decision-making process, their deployment is more than simple awareness-raising, as often the audience they engage has a direct effect on the system described.
+In the case of simulation, games can form a popular medium for modelling: a way for people not just to simulate a system to learn about its workings, but to actively participate in playing out the consequences of particular courses of action. SimCity is often credited for inspiring a generation of urban planners captivated by their role in a simulated local government \cite{roy_video_2019}. However, as a tool of representation, these games are not neutral: common critiques of SimCity are that it assumes an urban system planned and controlled from above, and that the closed nature of the underlying algorithm, a `black box' does not allow the player to question the underling assumptions of the game's maker \cite{starr_seductions_1994}.
 
+In her book \emph{Negotiation and Design for the Self-Organising City}, architect Ekim Tan asks us to re-consider urban games (such as SimCity) in a more open-ended context, advocating for `city gaming' as an accessible tool for engaging communities in urban planning exercises \cite{tan_negotiation_2014}. Tan's city games occupy a spectrum between educational and planning tools, including awareness-raising exercises about mass migration, educational games about successful affordable housing policies, and consultation on making new developments more bicycle- and pedestrian-friendly. Play the City is intended to `accelerate consensus' between stakeholders with conflicting interests, bringing together citizens, planners and policymakers in collective decision-making exercises, constrained by a rule-set that is tailored to the problem they are trying to solve \cite{tan_city_2017}. However, in generating the rules of the game, the asking of more basic questions e.g. `Should this development exist in the first place' is essential for true (rather than tokenistic) democracy \cite{shaw_informational_2017}.
+
+Along similar lines, Josh Lerner's \emph{Making Democracy Fun} explores the use of game design principles in democratic participation, making a distinction between games as \emph{metaphor}: games used to explain and represent political processes, and games as \emph{method}: making the political process a game in and of itself. 
+
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/1/sterman-climate.jpg}
+\caption{John Sterman running a session of \emph{World Climate} \cite{sterman_john_2013}}
+\end{marginfigure}
+
+Participatory simulations such as John Sterman's `World Climate' scenarios sit somewhere between metaphor and method, using complex climate models to guide participants (typically politicians, policymakers and academics) through a range of scenarios. Based directly on climate science, World Climate seeks to get participants to `draw their own conclusions', about emissions policy, rather than attempt to argue the point with words \cite{sterman_john_2013}. While these games might not be directly used as part of the decision-making process, their deployment is more than simple awareness-raising, as often the audience they engage has a direct effect on the system described.
 
 \subsection*{Critical Games}
 
-
-The works of Francis Tseng and Frank Lantz both provoke critical narratives within simulation games. For example, Lantz's wildly popular Universal Paperclips provides an insight into the perils of ill-constrained artificial intelligence \cite{lantz_universal_2017}, while Tseng's startup simulator The Founder satirises unethical innovation processes \cite{tseng_founder_2017}. In both these cases, a compelling narrative (supported, in Lantz's case, by a fairly bare interface) is used to involve the player in participating in a simulation. The performance of these transgressive behaviours within the game setting encourage the player to think more critically about what aspects of the system led them to behave in the way that they did: a technique that combats what Scot Osterweil nicknames the `virtuous player syndrome' (where players unquestioningly do what they assume is `right' in order to win the game) \cite{osterweil_civic_2011}.
+The works of Francis Tseng and Frank Lantz both provoke critical narratives within simulation games. For example, Lantz's wildly popular Universal Paperclips provides an insight into the perils of ill-constrained artificial intelligence \cite{lantz_universal_2017}, while Tseng's startup simulator The Founder satirises unethical innovation processes \cite{tseng_founder_2017}. In both these cases, a compelling narrative (supported, in Lantz's case, by a fairly bare interface) is used to involve the player in participating in a simulation.
+\begin{marginfigure}
+\includegraphics[width=\textwidth]{img/1/universal-paperclips-progress.jpg}
+\caption{A still from Frank Lantz's \emph{Universal Paperclips} \cite{lantz_universal_2017}}
+\end{marginfigure}
+The performance of these transgressive behaviours within the game setting encourage the player to think more critically about what aspects of the system led them to behave in the way that they did: a technique that combats what Scot Osterweil terms the `virtuous player syndrome' (where players unquestioningly do what they assume is `right' in order to win the game) \cite{osterweil_civic_2011}.
 
 \begin{marginfigure}
 \includegraphics[width=\textwidth]{img/1/the-founder.jpg}
@@ -609,23 +630,19 @@ The works of Francis Tseng and Frank Lantz both provoke critical narratives with
 James Gee's \emph{What Video Games have to teach us about Learning and Literacy} provides a foundational framework for understanding how games can be used to encourage critical thinking about a particular issue. Gee outlines a set of 30 principles core to games from which a player can learn, including the `cultural models' principle (in which players are encouraged to reflect on the model with which they view the world), the `self-knowledge' principle (whereby a game is constructed such that players may learn about themselves as well as the domain of the game) and the `situated meaning' principle, in which actions in the game have bearing on real-world actions \cite{gee_what_2004}. Gee also advocates for codesign -- the participation of stakeholders -- in all stages of the game's development.
 
 \subsection*{Explorable Explanations}
-Another core theme of Gee's writing is the ability of players to explore the principles underlying the function of games, and to modify and extend their experience of them. Nicky Case's simulation games -- which use Bret Victor's term `explorable explanations' -- act as sandboxes for the player, allowing them to question the assumptions underling their models. Case encourages players to perturb the dynamics of a complex system, both to learn, and then to test the assumptions made by the game's author \cite{case_how_2016}. Case cites Donella Meadows as a key inspiration in their work, which sits between systems theory, simulation and play. 
-
+Another core theme of Gee's writing is the ability of players to explore the principles underlying the function of games, and to modify and extend their experience of them. Nicky Case's simulation games -- which use Bret Victor's term `explorable explanations' -- act as sandboxes for the player, allowing them to question the assumptions underling their models. Case encourages players to perturb the dynamics of a complex system, both to learn, and then to test the assumptions made by the game's author \cite{case_how_2016}. Case cites Donella Meadows as a key inspiration in their work, which sits between systems theory, simulation and play.
 
 \begin{marginfigure}
 \includegraphics[width=\textwidth]{img/1/parable.png}
-\caption{Vi Hart and Nicky Case's \emph{Parable of the Polygons} creates an explorable version of Schelling's segregation models, allowing the player to modify the parameters of the simulation \label{b} \cite{case_parable_2015}}
+\vspace{0.8cm}
+\includegraphics[width=\textwidth]{img/1/voting.png}
+\caption{Vi Hart and Nicky Case's \emph{Parable of the Polygons} (top) creates an explorable version of Schelling's segregation models, allowing the player to modify the parameters of the simulation \cite{case_parable_2015}. Case's \emph{To Build a Better Ballot} (bottom) uses these ideas to give the user a critical, interactive exploration of the effects of complex voting policy \cite{case_build_2016}.}
 \end{marginfigure}
 
 As Ava Kofman argues, on writing about agency in urban simulation games ``We should ask not what our ideal city on SimCity, LivingPlanIT, or some other Urban OS would look like, but what our ideal urban simulator would be. Given this or that operating system, who does the city work for and who works for the city? No longer is the goal to design an urban imaginary: you must now code the game.''.
 
 
 \subsection*{Playing with Trash}
-Argument:
-participatory urbanism 
-change needs to take place across these 3 scales to be effective
-the lab is already targeting infrastructural changes
-drawing on participatory urbanism and legibility
 
 \begin{flushright}
 \emph{``so i've been playing this game the last few days and it's such a love hate thing... my city was just starting to blossom... and then guess what --- people stopped working at my sewage plant and my garbage fill because they weren't ``low income'' workers anymore... so slowly garbage and shit starting filling the streets and everyone abandoned the city like i'm about to abandon the game again. thanks.''}\cite{friedricekid_is_2017}\\
@@ -641,6 +658,7 @@ PBS's Garbage Dreams gives a narrative to this sorting: playing the role of a Za
 %IMAGE TO ADD: garbage dreams
 \begin{marginfigure}
 \includegraphics[width=\textwidth]{img/1/garbage-dreams-1.png}
+\vspace{0.5cm}
 \includegraphics[width=\textwidth]{img/1/garbage-dreams-2.png}
 \caption{Sorting trash and expanding operations in PBS's \emph{Garbage Dreams} \cite{iskander_garbage_2011} \label{b}}
 \end{marginfigure}
@@ -669,12 +687,12 @@ Of course, one could argue that critical learning and political agency are not n
 
 Despite numerous examples, it is hard to find a civic game concerning waste that has been tied to a specific local context. Garbage Dreams, for example, is set in Egypt, but the only version of the game online is in English, underlining the idea that wastes are dealt with `somewhere else'. Likewise, the undergraduate students that comprised the primary subjects of Hirose et. al's study are likely not those directly involved with industrial waste disposal. 
 
-Why might this matter? For one, decontextualised `awareness-raising' games might shape the discourse around an issue, but if the goal of such games is to change a specific situation through the actions of the audience -- be it recycling contamination, or an understanding of toxic waste disposal -- then players should be able to relate their actions in the real world to events in the game itself. This not to say, of course, that there is nothing to be learned by playing these games, nor that locally contextualised games cannot be generalised in many aspects. However this thesis posits that reference to and interaction with the infrastructural context of the players is necessary for games to link a change in awareness to one of attitude and behaviour.
+Why might this matter? For one, decontextualised `awareness-raising' games might shape the discourse around an issue, but if the goal of such games is to lead to action on behalf of the audience, then players should be able to relate their actions in the real world to events in the game itself. In a critique of games that simply `raise awareness', Lerner declares that the greatest limitation of the `social issues game' is a ``tenuous connection to politics and community groups... [they] tend to have hazy goals and rarely help translate awareness into action'' \cite{lerner_making_2014}. This not to say, of course, that there is nothing to be learned by playing these games, nor that locally contextualised games cannot be generalised in many aspects. However, this thesis posits that reference to and interaction with the infrastructural context of the players is necessary for games to link a change in awareness to one of attitude and behaviour.
 
 \subsection*{Conclusions}
+Waste systems suffer from a crisis of representation, in part because they are complex, and hard to represent, and in part because when they are made visible, there is a cultural attitude toward them that lacks care and attention. A whole-systems perspective on waste could highlight the impact of behaviours such as recycling contamination, which stems from a combination of good intentions and a lack of information. Examples of representation in other such complex systems (climate change \cite{sterman_world_2015, macklin_games_2013}, democratic participation \cite{lerner_making_2014, case_build_2016}) show that simulation and games can be a powerful tools for engaging civic attention around otherwise difficult issues.
 
-In a critique of games that simply `raise awareness', Lerner declares that the greatest limitation of the `social issues game' is a ``tenuous connection to politics and community groups... [they] tend to have hazy goals and rarely help translate awareness into action'' \cite{lerner_making_2014}. Going forward, this thesis seeks to provide a framework for making these connections. Using waste as a case study, and building on existing frameworks for designing with public organisations \cite{schaminee_designing_2018}, I describe methods of 
-
+Understanding and information need to come alongside infrastructural change when making interventions in municipal waste systems \cite{kline_rationalizing_1988}. Serious games give us both a means of making legible complex systems, and in engaging stakeholders in critical awareness, participation and action. Using waste as a case study, and building on existing models for designing with public organisations \cite{schaminee_designing_2018}, this thesis provides a framework for making explicit the connection between context, awareness and action in civic games.
 
 
 %General awareness-raising without reference to specific infrastructural concerns might shape the attitudes of players towards a topic, but, if we consider the findings of Stern et. al, might be unlikely to affect a behavioural change.
@@ -723,6 +741,7 @@ Rachel Perlman, a student in the Institute for Data, Systems and Society and org
 The Zero Waste initiative at MIT is led by the Office for Sustainability in conjunction with the Office for Recycling and Materials Management, Custodial Services, Bootstrap Compost and Enevo waste management. This is a year-long experiment (academic year 2018-19), which will seek -- as a baseline -- to divert 90\% of waste by volume from landfill, directing it instead to recycling and compost. The first stage of this scheme was an audit of the lab's solid waste streams in November 2018, which found that approximately 50\% of the Media Lab's waste is recycled or composted, though within that, around a third of the recycling is contaminated, bringing the total waste diverted from landfill to a much lower 36\% (Goldberg, 2018). By volume, around 25\% of the materials recovered from the recycling during the audit were non-recyclable. In addition, much of the waste ending up in the trash is food waste, which could instead be composted.
 
 One of the main causes of recycling contamination on campus is due to food waste entering the recycling stream, though harder to spot are contaminants such as black plastics, coffee cups, plastic utensils, and styrofoam, items which students and staff are often unsure whether they can be recycled. Currently, contaminants are identified by custodians inspecting bags from the outside; if a bag is seen to contain a contaminant, it is placed straight in landfill.
+
 To address issues of contamination, a 3-month pilot scheme has been conducted between select (and isolated) areas of the lab: the 2nd floor (including offices, the mezzanine level of the workshop, and 2 research groups), and selected office areas of the 4th floor. The aim of this scheme was to examine whether a combination of education (around recycling, composting, and best purchasing practices), and infrastructural change can advance the zero waste goal of the overall scheme. The infrastructural changes proposed by the scheme are to unify and centralise the waste disposal locations for all of the participating offices. 
 
 Thus far, I have been present at pilot meetings since December of this year, and have attended and helped to facilitate the workshops run for participants in the scheme. This thesis project is being conducted in the context of the educational and outreach part of this pilot, though for the sake of establishing a reliable `control', the evaluation of work developed for this thesis also involves groups not directly included in the pilot scheme. Results from both the pilot, and from these separate studies will inform the roll-out of this program to the wider MIT campus. 
@@ -731,7 +750,7 @@ Thus far, I have been present at pilot meetings since December of this year, and
 
 In order to effectively represent and explore waste systems at MIT, I spent the first month of this project conducting a series of formal and informal interviews with stakeholders throughout MIT's waste ecosystem, including students, organisers, custodians, staff and faculty. The interview process was intended to provide a range of perspectives on the structural dynamics, attitudes, challenges and behaviours that influence waste at MIT.
 
-Each interview centered around 5 questions, chosen to highlight possible game mechanics, and to give a sense of the variables identified by Offenhuber \cite{offenhuber_waste_2017}.
+Each interview centered around 5 questions, chosen to help characterise different perspectives on MIT's waste system, based on the variables identified by Offenhuber \cite{offenhuber_waste_2017}.
 
 \begin{enumerate}
 \item What do you see as the biggest structural (financial, spatial, etc) barrier to managing waste at MIT?
@@ -763,11 +782,13 @@ The lab does have a robust internal system for managing food waste (though this 
 
 \subsection*{Institute-specific}
 
-In general, people I spoke to across both recycling and custodial services felt over-stretched. In particular, with only 7 staff and 2 vans to cover the whole campus, the Office for Recycling has very little flexibility to accommodate an increased workload. Custodial staff are tasked not only with collecting landfill waste, food waste and recycling, and identifying potentially contaminated loads, but also with cleaning the buildings, putting a strict limit on the amount of time that can be dedicated to waste collection and inspection. Although the departments try where they can to co-operate with one another, issues such as the leftover waste at the bottom of the Media Lab bins are common disconnects across campus, where neither party has time to deal with a local issue.
+In general, people I spoke to across both recycling and custodial services felt over-stretched. In particular, with only 5 recycling-moving staff and 2 vans to cover the whole campus, the Office for Recycling has very little flexibility to accommodate an increased workload. Custodial staff are tasked not only with collecting landfill waste, food waste and recycling, and identifying potentially contaminated loads, but also with cleaning the buildings, putting a strict limit on the amount of time that can be dedicated to waste collection and inspection. Although the departments try where they can to co-operate with one another, issues such as the leftover waste at the bottom of the Media Lab bins are common disconnects across campus, where neither party has time to deal with a local issue.
 
 Levels of recycling contamination are high across campus, particularly in areas where food is sold, that result in food, food containers and disposable cutlery contaminating the streams. The problem is compounded at sites with both a recycling compactor and food waste present, as it is not possible for recycling staff to separate and examine a potentially contaminated load before taking it to the MRF. If contaminants are found in the compacted load, the whole thing must be disposed of (whereas when the load is still in bins, it is only the bin that is thrown out).
 
 High levels of purchasing from Amazon without much oversight or institutional control was also mentioned several times as an issue, with disconnects in purchasing between (and even within) departments leading to, for example, multiple offices within the same building getting separate shipments of supplies where a single bulk order would do. Amazon packages present a particular frustration, as often these are not broken down and instead left next to bins, creating more work for already stretched custodial staff.
+
+%shift from centralised decisions to individual behaviours
 
 The management of lab waste streams was highlighted as a particularly serious campus-wide problem at present, as it is not currently possible to recycle pipette tips, lab glass, and latex gloves, all of which are heavily-used disposable items across MIT's labs. In addition, the lack of communication between labs across was identified as a key issue with the re-use and sharing of particular chemicals, with multiple labs found to be buying and disposing of many of the same materials. 
 
@@ -786,7 +807,7 @@ In gauging attitudes amongst students toward waste systems, I conducted a number
 
 Other factors that limited recycling and composting were the relative distances to various bins. Students who had a trash bin in their office reported rarely walking all the way to a central location to dispose of food waste, because of the relative time and convenience.
 
-In addition, many students were disappointed that not as many of the items that they imagined were recyclable actually were (coffee cups is a prime example of this), and more disappointed that even `good' recycling (e.g. Low contamination) could still placed in landfill at high rates. Multiple students expressed their frustrations that they had seen custodial staff placing recycling bags in the trash, and were not aware that this might be due to recycling contamination rather than simple carelessness. In some cases, students said that these frustrations, combined with other distractions, lead to them `giving up' trying to waste well. This sentiment correlates with the `lack of care' toward the system perceived by waste management staff.
+In addition, many students were disappointed that not as many of the items that they imagined were recyclable actually were (coffee cups is a prime example of this), and more disappointed that even `good' recycling (e.g. low contamination) could still placed in landfill at high rates. Multiple students expressed their frustrations that they had seen custodial staff placing recycling bags in the trash, and were not aware that this might be due to recycling contamination rather than simple carelessness. In some cases, students said that these frustrations, combined with other distractions, lead to them `giving up' trying to waste well. This sentiment correlates with the `lack of care' toward the system perceived by waste management staff.
 
 %much deeper synthesis: how much should a representation challenge the status quo?
 
@@ -814,7 +835,7 @@ A key aim within realising these goals is to encourage positive behaviours towar
 
 \subsection*{Timeline}
 
-The timeline for the Zero Waste Pilot study is between February-April 2019. Over this period, the waste infrastructure the pilot locations is changed to a centralised layout with clear signage, and all participants are invited to a series of workshops: one at the start (February 4th), one at the midpoint (March 13th), and one at the end of the study (TBD). These workshops are for both educational and feedback purposes, and involve staff from all parties involved in the pilot scheme, in addition to student organisers from the MIT Waste Alliance.
+The timeline for the Zero Waste Pilot study is between February-April 2019. Over this period, the waste infrastructure the pilot locations is changed to a centralised layout with clear signage, and all participants are invited to a series of workshops: one at the start (February 4th), one at the midpoint (March 13th), and one at the end of the study (). These workshops are for both educational and feedback purposes, and involve staff from all parties involved in the pilot scheme, in addition to student organisers from the MIT Waste Alliance.
 
 \section*{Trash Poker}
 
@@ -1141,6 +1162,8 @@ While this study endeavours to control for as many social and infrastructural fa
 
 Another factor that may have influenced the outcomes of the study is the mention of the importance of reducing recycling contamination at a Town Hall meeting of the Lab by the director Joi Ito, four days after the study was conducted.
 
+%Please show what you controlled for and how.  Then you can note elements you could not control for.
+
 % \subsection*{Online Study}
 
 % The second study of the simulation game uses a concatenated version of the survey to assess changes in attitude and behaviours, and does not include a waste audit. The population for this study are members of the general public, who take part in the game via the internet. This population has a potentially higher degree of randomness, though depending on the channels of distribution (e.g. Media Lab accounts) the population reached is unlikely to be fully randomised. Participants in the online version of the game will be given the option to complete component (1) before and after play, with only those who have completed the pre-game survey permitted to take part in the post-game survey.
@@ -1318,6 +1341,9 @@ This thesis also incorporates a study that uses mixed methods to observe links b
 
 In changing the legibility of a system, games need to allude to the complexity of its components, and ???. However, as shown by the card game and simulation game experiments, they also need to be accompanied with the tools for action, whether that is just information, . It is in this sense that civic games must have a context to bring about real change: either 
 For demo
+
+%Trash matters but it is also an exemplar of other societal issues where the cost is acute and the benefit is either diffuse or longterm or out of an individual’s hands.  That links people like Sterman to you and is why you talk about SimCity.
+
 
 \section*{Future Work}
 Further studies will be needed to see whether the change in attitude fostered by participation in these different types of games is significant in the context of infrastructural change. In addition, it would be interesting to see whether such games could contribute to the legibility of other such complex information systems.
