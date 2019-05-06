@@ -62,16 +62,22 @@ Dietmar Offenhuber and Carlo Ratti.
 \newblock MIT Press, October 2017.
 \newblock Google-Books-ID: BLQ5DwAAQBAJ.
 
-\bibitem{delichatsios_trash_2011}
-Alki Delichatsios.
-\newblock Trash {Talkin}! {My} visit to the recycling facility. {\textbar}
-  {Watt} {Now}, September 2011.
+\bibitem{calvino_invisible_1974}
+Italo Calvino.
+\newblock {\em Invisible {Cities}}.
+\newblock Houghton Mifflin Harcourt, 1974.
+\newblock Google-Books-ID: Pn8d9riSL6UC.
 
 \bibitem{morawski_understanding_2009}
 Clarissa Morawski, Susan Collins, and Betty McLaughlin.
 \newblock Understanding {Economic} and {Environmental} {Impacts} of {Single}
   {Stream} {Collection} {Systems}.
 \newblock Technical report, Container Recycling Institute, 2009.
+
+\bibitem{delichatsios_trash_2011}
+Alki Delichatsios.
+\newblock Trash {Talkin}! {My} visit to the recycling facility. {\textbar}
+  {Watt} {Now}, September 2011.
 
 \bibitem{laskow_single-stream_2014}
 Sarah Laskow.
@@ -151,12 +157,6 @@ Jim Reardon.
 \newblock Trash of the {Titans}, 1998.
 \newblock IMDb ID: tt0701277.
 
-\bibitem{calvino_invisible_1974}
-Italo Calvino.
-\newblock {\em Invisible {Cities}}.
-\newblock Houghton Mifflin Harcourt, 1974.
-\newblock Google-Books-ID: Pn8d9riSL6UC.
-
 \bibitem{ukeles_touch_1980}
 Mierle~Laderman Ukeles.
 \newblock Touch {Sanitation} {Performance}, 1980.
@@ -196,14 +196,14 @@ Donella~H. Meadows.
 \newblock Chelsea Green Publishing, 2008.
 \newblock Google-Books-ID: CpbLAgAAQBAJ.
 
+\bibitem{liboiron_trash_2012}
+Max Liboiron.
+\newblock Trash is a {Wicked} {Problem}, December 2012.
+
 \bibitem{forrester_urban_1969}
 Jay~Wright Forrester.
 \newblock {\em Urban {Dynamics}}.
 \newblock MIT Press, Cambridge, MA, 1969.
-
-\bibitem{liboiron_trash_2012}
-Max Liboiron.
-\newblock Trash is a {Wicked} {Problem}, December 2012.
 
 \bibitem{schelling_dynamic_1971}
 Thomas~C. Schelling.
@@ -277,7 +277,7 @@ Gregory~A. Guagnano, Paul~C. Stern, and Thomas Dietz.
   {Experiment} with {Curbside} {Recycling}.
 \newblock {\em Environment and Behavior}, 27(5):699--718, September 1995.
 
-\bibitem{Kline_rationalizing_1988}
+\bibitem{kline_rationalizing_1988}
 Stephen Kline, Ont.) York University~(Toronto, and {Faculty of Environmental
   Studies}.
 \newblock {\em Rationalizing attitude discrepant behaviour: a case study in
@@ -322,15 +322,15 @@ Sherry~R. Arnstein.
 \newblock {\em Journal of the American Institute of Planners}, 35(4):216--224,
   July 1969.
 
-\bibitem{mundano_pimp_nodate}
-Thiago Mundano.
-\newblock Pimp my {Carroça}.
-
 \bibitem{tremblay_united_2010}
 Crystal Tremblay, Jutta Gutberlet, and Ana~Maria Peredo.
 \newblock United {We} {Can}: {Resource} recovery, place and social enterprise.
 \newblock {\em Resources, Conservation and Recycling}, 54(7):422--428, May
   2010.
+
+\bibitem{mundano_pimp_nodate}
+Thiago Mundano.
+\newblock Pimp my {Carroça}.
 
 \bibitem{Gabrys_programming_2014}
 Jennifer Gabrys.
@@ -349,14 +349,13 @@ Josh Lepawsky.
   to rethink the e-waste problem.
 \newblock {\em The Geographical Journal}, 181(2):147--159, June 2015.
 
-\bibitem{foucault_other_1967}
-Michel Foucault.
-\newblock Of {Other} {Spaces}: {Utopias} and {Heterotopias}.
-\newblock {\em Diacritics}, 16(1):22--27, 1967.
-
 \bibitem{detar_mapping_2011}
 Charlie DeTar.
 \newblock Mapping the {Space} of {Location}-{Based} {Services}, 2011.
+
+\bibitem{mattern_local_2019}
+Shannon Mattern.
+\newblock Local {Codes}: {Forms} of {Spatial} {Knowledge}, 2019.
 
 \bibitem{haque_citizen_2017}
 Usman Haque.
@@ -372,20 +371,37 @@ Fredric Jameson.
 \newblock Duke University Press, 1991.
 \newblock Google-Books-ID: oRJ9fh9BK8wC.
 
+\bibitem{sterman_world_2015}
+John Sterman, Travis Franck, Thomas Fiddaman, Andrew Jones, Stephanie McCauley,
+  Philip Rice, Elizabeth Sawin, Lori Siegel, and Juliette~N. Rooney-Varga.
+\newblock {WORLD} {CLIMATE}: {A} {Role}-{Play} {Simulation} of {Climate}
+  {Negotiations}.
+\newblock {\em Simulation \& Gaming}, 46(3-4):348--382, June 2015.
+
 \bibitem{macklin_games_2013}
 Colleen Macklin.
 \newblock {\em Games for a {New} {Climate}: {A} {Game} {Design} {Case} {Study}
   for {Humanitarian} {Programs}}.
 \newblock {MA}, {International} {Affairs}, The New School, 2013.
 
-\bibitem{dunnigan_few_1969}
-Jim Dunnigan.
-\newblock A {Few} {Theoretical} {Remarks}.
-\newblock {\em Columbia Daily Spectator}, March 1969.
+\bibitem{landa_war_1991}
+Manuel~De Landa.
+\newblock {\em War in the age of intelligent machines}.
+\newblock Zone Books, 1991.
+\newblock Google-Books-ID: TZLfAAAAMAAJ.
 
 \bibitem{buckminster_fuller_institute_about_nodate}
 Buckminster~Fuller Institute.
 \newblock About {Fuller}: {WORLD} {GAME}.
+
+\bibitem{johnson_inside_2013}
+Jason Johnson.
+\newblock Inside the failed, utopian {New} {Games} {Movement}, October 2013.
+
+\bibitem{dunnigan_few_1969}
+Jim Dunnigan.
+\newblock A {Few} {Theoretical} {Remarks}.
+\newblock {\em Columbia Daily Spectator}, March 1969.
 
 \bibitem{sterman_john_2013}
 John Sterman.
@@ -407,6 +423,10 @@ Ekim Tan.
   {Gaming} as a method for {Urban} {Design}}.
 \newblock A+BE, 2014.
 
+\bibitem{play_the_city_play_2013}
+Play~The City.
+\newblock Play {Oosterwold}, 2013.
+
 \bibitem{tan_city_2017}
 Ekim Tan.
 \newblock City {Gaming} {Method}, 2017.
@@ -417,9 +437,12 @@ Joe Shaw and Mark Graham.
   {Control}, and the {Urbanization} of {Information}.
 \newblock {\em Antipode}, 49(4):907--927, 2017.
 
-\bibitem{play_the_city_play_2013}
-Play~The City.
-\newblock Play {Oosterwold}, 2013.
+\bibitem{lerner_making_2014}
+Josh Lerner.
+\newblock {\em Making {Democracy} {Fun}: {How} {Game} {Design} {Can} {Empower}
+  {Citizens} and {Transform} {Politics}}.
+\newblock MIT Press, February 2014.
+\newblock Google-Books-ID: 5efaAgAAQBAJ.
 
 \bibitem{lantz_universal_2017}
 Frank Lantz.
@@ -429,13 +452,13 @@ Frank Lantz.
 Francis Tseng.
 \newblock The {Founder}, 2017.
 
-\bibitem{osterweil_civic_2011}
-Scot Osterweil.
-\newblock Civic {Games}, 2011.
-
 \bibitem{tseng_founder_2017-1}
 Francis Tseng and Vicky Osterweil.
 \newblock The {Founder}, November 2017.
+
+\bibitem{osterweil_civic_2011}
+Scot Osterweil.
+\newblock Civic {Games}, 2011.
 
 \bibitem{gee_what_2004}
 James~Paul Gee.
@@ -451,6 +474,10 @@ Nicky Case.
 \bibitem{case_parable_2015}
 Nicky Case and Vi~Hart.
 \newblock Parable of the {Polygons}, 2015.
+
+\bibitem{case_build_2016}
+Nicky Case.
+\newblock To {Build} a {Better} {Ballot}, 2016.
 
 \bibitem{friedricekid_is_2017}
 friedricekid.
@@ -482,13 +509,6 @@ Daniel Lobo.
 Garbage {Incinerator} - {SimCity} {Wiki} - {SimCity} 5 {Community} {Wiki} and
   {Guide}, 2013.
 
-\bibitem{lerner_making_2014}
-Josh Lerner.
-\newblock {\em Making {Democracy} {Fun}: {How} {Game} {Design} {Can} {Empower}
-  {Citizens} and {Transform} {Politics}}.
-\newblock MIT Press, February 2014.
-\newblock Google-Books-ID: 5efaAgAAQBAJ.
-
 \bibitem{perlman_material_2016}
 Rachel Perlman and MIT~Office of~Sustainability.
 \newblock Material {Flow} {Analysis} {\textbar} {MIT} {Sustainability}, 2016.
@@ -496,6 +516,22 @@ Rachel Perlman and MIT~Office of~Sustainability.
 \bibitem{case_loopy!_2017}
 Nicky Case.
 \newblock {LOOPY}!, 2017.
+
+\bibitem{blleininger_english_2010}
+Adoption\_CLD gif: Original uploader was Apdevries at en
+  wikipediaderivative~work: Blleininger.
+\newblock English: en:{Causal} loop diagram of adoption, used to demontrate
+  en:systems dynamics. {Diagram} created by contributor, from article by
+  en:{John} {Sterman} (2001) {Systems} dynamics modeling: tools for learning in
+  a complex world, {California} management review, {Vol} 43 no 1, {Summer}
+  2001, February 2010.
+
+\bibitem{noauthor_vensim_nodate}
+Vensim.
+
+\bibitem{tseng_big_2016}
+Francis Tseng.
+\newblock Big {Simulation} {Architecture}, 2016.
 
 \bibitem{fischer_criteria_2014}
 Fabian Fischer.
