@@ -94,10 +94,9 @@ Shannon Mattern.
 \newblock Instrumental {City}: {The} {View} from {Hudson} {Yards}, circa 2019.
 \newblock {\em Places Journal}, April 2016.
 
-\bibitem{envac_smart_nodate}
-Envac.
-\newblock Smart waste handling for sustainable cities, hospitals and airports -
-  {Envac}.
+\bibitem{casella_recycle_2018}
+Casella.
+\newblock Recycle {Better}, 2018.
 
 \bibitem{donath_signals_2011}
 Judith Donath.
@@ -124,6 +123,11 @@ Shannon Mattern.
 \bibitem{liboiron_why_2014}
 Max Liboiron.
 \newblock Why {Discard} {Studies}, 2014.
+
+\bibitem{envac_smart_nodate}
+Envac.
+\newblock Smart waste handling for sustainable cities, hospitals and airports -
+  {Envac}.
 
 \bibitem{lynch_wasting_1990}
 Kevin Lynch.
@@ -164,6 +168,12 @@ Mierle~Laderman Ukeles.
 \bibitem{odell_archive_2015}
 Jenny Odell.
 \newblock The {Archive} of the {Bureau} of {Suspended} {Objects}, 2015.
+
+\bibitem{lepawsky_mapping_2010}
+Josh Lepawsky and Chris Mcnabb.
+\newblock Mapping international flows of electronic waste.
+\newblock {\em The Canadian Geographer / Le Géographe canadien},
+  54(2):177--195, 2010.
 
 \bibitem{lin_disassembly_2016}
 Wiena Lin.
@@ -249,6 +259,19 @@ Usman Haque.
   or for the {Planet}.
 \newblock Technical report, 2008.
 
+\bibitem{varotto_psychological_2017}
+Alessandra Varotto and Anna Spagnolli.
+\newblock Psychological strategies to promote household recycling. {A}
+  systematic review with meta-analysis of validated field interventions.
+\newblock {\em Journal of Environmental Psychology}, 51:168--188, August 2017.
+
+\bibitem{huffman_when_2014}
+Ann~Hergatt Huffman, Brittney~R. Van Der~Werff, Jaime~B. Henning, and Kristen
+  Watrous-Rodriguez.
+\newblock When do recycling attitudes predict recycling? {An} investigation of
+  self-reported versus observed behavior.
+\newblock {\em Journal of Environmental Psychology}, 38:262--270, June 2014.
+
 \bibitem{ajzen_theory_1991}
 Icek Ajzen.
 \newblock The theory of planned behavior.
@@ -264,6 +287,12 @@ Albert Bandura.
 Ethan Zuckerman.
 \newblock {\em Mobilizing {Mistrust}}.
 \newblock 2019.
+
+\bibitem{strydom_applying_2018}
+Wilma~F. Strydom.
+\newblock Applying the {Theory} of {Planned} {Behavior} to {Recycling}
+  {Behavior} in {South} {Africa}.
+\newblock {\em Recycling}, 3(3):43, September 2018.
 
 \bibitem{stern_managing_1987}
 PC~Stern and Stuart Oskamp.
@@ -292,10 +321,6 @@ Jacob Hornik, Joseph Cherian, Michelle Madansky, and Chem Narayana.
   results.
 \newblock {\em The Journal of Socio-Economics}, 24(1):105--127, March 1995.
 
-\bibitem{zero_waste_international_alliance_zero_2017}
-Zero Waste~International Alliance.
-\newblock Zero {Waste}, 2017.
-
 \bibitem{aia_new_york_zero_2017}
 AIA~New York, Kiss+Cathcart, ClosedLoops, and Foodprint Group.
 \newblock Zero {Waste} {Design} {Guidelines}.
@@ -305,6 +330,10 @@ AIA~New York, Kiss+Cathcart, ClosedLoops, and Foodprint Group.
 Corey Benninger.
 \newblock {DIVERTsy} {Android} {Client}, March 2019.
 \newblock original-date: 2017-04-11T19:00:49Z.
+
+\bibitem{zero_waste_international_alliance_zero_2017}
+Zero Waste~International Alliance.
+\newblock Zero {Waste}, 2017.
 
 \bibitem{price_technology_1979}
 Cedric Price.
@@ -348,6 +377,11 @@ Josh Lepawsky.
 \newblock The changing geography of global trade in electronic discards: time
   to rethink the e-waste problem.
 \newblock {\em The Geographical Journal}, 181(2):147--159, June 2015.
+
+\bibitem{foucault_other_1967}
+Michel Foucault.
+\newblock Of {Other} {Spaces}: {Utopias} and {Heterotopias}.
+\newblock {\em Diacritics}, 16(1):22--27, 1967.
 
 \bibitem{detar_mapping_2011}
 Charlie DeTar.
@@ -417,15 +451,15 @@ Paul Starr.
 \newblock Seductions of {Sim}: {Policy} as a {Simulation} {Game}.
 \newblock {\em The American Prospect}, 1994.
 
+\bibitem{play_the_city_play_2013}
+Play~The City.
+\newblock Play {Oosterwold}, 2013.
+
 \bibitem{tan_negotiation_2014}
 Ekim Tan.
 \newblock {\em Negotiation and {Design} for the {Self}-{Organising} {City}:
   {Gaming} as a method for {Urban} {Design}}.
 \newblock A+BE, 2014.
-
-\bibitem{play_the_city_play_2013}
-Play~The City.
-\newblock Play {Oosterwold}, 2013.
 
 \bibitem{tan_city_2017}
 Ekim Tan.
@@ -436,6 +470,9 @@ Joe Shaw and Mark Graham.
 \newblock An {Informational} {Right} to the {City}? {Code}, {Content},
   {Control}, and the {Urbanization} of {Information}.
 \newblock {\em Antipode}, 49(4):907--927, 2017.
+
+\bibitem{noauthor_usina_ctah_nodate}
+{USINA}\_ctah.
 
 \bibitem{lerner_making_2014}
 Josh Lerner.
