@@ -169,12 +169,6 @@ Mierle~Laderman Ukeles.
 Jenny Odell.
 \newblock The {Archive} of the {Bureau} of {Suspended} {Objects}, 2015.
 
-\bibitem{lepawsky_mapping_2010}
-Josh Lepawsky and Chris Mcnabb.
-\newblock Mapping international flows of electronic waste.
-\newblock {\em The Canadian Geographer / Le Géographe canadien},
-  54(2):177--195, 2010.
-
 \bibitem{lin_disassembly_2016}
 Wiena Lin.
 \newblock Disassembly {Line}, 2016.
@@ -259,6 +253,12 @@ Usman Haque.
   or for the {Planet}.
 \newblock Technical report, 2008.
 
+\bibitem{anya_schiffrin_can_2015}
+{Anya Schiffrin} and Ethan Zuckerman.
+\newblock Can {We} {Measure} {Media} {Impact}? {Surveying} the {Field}
+  ({SSIR}).
+\newblock {\em Stanford Social Innovation Review}, 2015.
+
 \bibitem{varotto_psychological_2017}
 Alessandra Varotto and Anna Spagnolli.
 \newblock Psychological strategies to promote household recycling. {A}
@@ -288,12 +288,6 @@ Ethan Zuckerman.
 \newblock {\em Mobilizing {Mistrust}}.
 \newblock 2019.
 
-\bibitem{strydom_applying_2018}
-Wilma~F. Strydom.
-\newblock Applying the {Theory} of {Planned} {Behavior} to {Recycling}
-  {Behavior} in {South} {Africa}.
-\newblock {\em Recycling}, 3(3):43, September 2018.
-
 \bibitem{stern_managing_1987}
 PC~Stern and Stuart Oskamp.
 \newblock Managing {Environmental} {Resources}.
@@ -306,6 +300,18 @@ Gregory~A. Guagnano, Paul~C. Stern, and Thomas Dietz.
   {Experiment} with {Curbside} {Recycling}.
 \newblock {\em Environment and Behavior}, 27(5):699--718, September 1995.
 
+\bibitem{strydom_applying_2018}
+Wilma~F. Strydom.
+\newblock Applying the {Theory} of {Planned} {Behavior} to {Recycling}
+  {Behavior} in {South} {Africa}.
+\newblock {\em Recycling}, 3(3):43, September 2018.
+
+\bibitem{Hornik_determinants_1995}
+Jacob Hornik, Joseph Cherian, Michelle Madansky, and Chem Narayana.
+\newblock Determinants of recycling behavior: {A} synthesis of research
+  results.
+\newblock {\em The Journal of Socio-Economics}, 24(1):105--127, March 1995.
+
 \bibitem{kline_rationalizing_1988}
 Stephen Kline, Ont.) York University~(Toronto, and {Faculty of Environmental
   Studies}.
@@ -314,12 +320,6 @@ Stephen Kline, Ont.) York University~(Toronto, and {Faculty of Environmental
 \newblock Faculty of Environmental Studies, York University, North York, Ont.,
   1988.
 \newblock OCLC: 222508980.
-
-\bibitem{Hornik_determinants_1995}
-Jacob Hornik, Joseph Cherian, Michelle Madansky, and Chem Narayana.
-\newblock Determinants of recycling behavior: {A} synthesis of research
-  results.
-\newblock {\em The Journal of Socio-Economics}, 24(1):105--127, March 1995.
 
 \bibitem{aia_new_york_zero_2017}
 AIA~New York, Kiss+Cathcart, ClosedLoops, and Foodprint Group.
@@ -330,6 +330,13 @@ AIA~New York, Kiss+Cathcart, ClosedLoops, and Foodprint Group.
 Corey Benninger.
 \newblock {DIVERTsy} {Android} {Client}, March 2019.
 \newblock original-date: 2017-04-11T19:00:49Z.
+
+\bibitem{smyth_reducing_2010}
+Danielle~P. Smyth, Arthur~L. Fredeen, and Annie~L. Booth.
+\newblock Reducing solid waste in higher education: {The} first step towards
+  ‘greening’ a university campus.
+\newblock {\em Resources, Conservation and Recycling}, 54(11):1007--1016,
+  September 2010.
 
 \bibitem{zero_waste_international_alliance_zero_2017}
 Zero Waste~International Alliance.
@@ -344,6 +351,10 @@ Cedric Price.
 Maroš Krivý and Tahl Kaminer.
 \newblock The {Participatory} {Turn} in {Urbanism} ({Introduction}).
 \newblock {\em Footprint}, pages 1--6, 2013.
+
+\bibitem{mattern_sidewalk_2019}
+Shannon Mattern.
+\newblock Sidewalk {Labs}’s {Material} {Co}-{Design}, 2019.
 
 \bibitem{arnstein_ladder_1969}
 Sherry~R. Arnstein.
@@ -589,12 +600,9 @@ D.~Lee, D.~Offenhuber, A.~Biderman, and C.~Ratti.
 \newblock In {\em 2014 {IEEE} {World} {Forum} on {Internet} of {Things}
   ({WF}-{IoT})}, pages 130--134, March 2014.
 
-\bibitem{smyth_reducing_2010}
-Danielle~P. Smyth, Arthur~L. Fredeen, and Annie~L. Booth.
-\newblock Reducing solid waste in higher education: {The} first step towards
-  ‘greening’ a university campus.
-\newblock {\em Resources, Conservation and Recycling}, 54(11):1007--1016,
-  September 2010.
+\bibitem{glasmeier_mit_2018}
+Amy Glasmeier and Carey~Ann Nadeau.
+\newblock {MIT} {Living} {Wage} {Calculator}, 2018.
 
 \bibitem{otts_e-mail_2019}
 Sarah Otts.
