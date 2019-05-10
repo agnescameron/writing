@@ -115,6 +115,11 @@ Anna~Lowenhaupt Tsing.
 \newblock {\em Friction: {An} {Ethnography} of {Global} {Connection}}.
 \newblock Princeton University Press, 2005.
 
+\bibitem{envac_smart_nodate}
+Envac.
+\newblock Smart waste handling for sustainable cities, hospitals and airports -
+  {Envac}.
+
 \bibitem{mattern_infrastructural_2013}
 Shannon Mattern.
 \newblock Infrastructural {Tourism}.
@@ -123,11 +128,6 @@ Shannon Mattern.
 \bibitem{liboiron_why_2014}
 Max Liboiron.
 \newblock Why {Discard} {Studies}, 2014.
-
-\bibitem{envac_smart_nodate}
-Envac.
-\newblock Smart waste handling for sustainable cities, hospitals and airports -
-  {Envac}.
 
 \bibitem{lynch_wasting_1990}
 Kevin Lynch.
@@ -172,6 +172,13 @@ Jenny Odell.
 \bibitem{lin_disassembly_2016}
 Wiena Lin.
 \newblock Disassembly {Line}, 2016.
+
+\bibitem{noauthor_wien_nodate}
+Wien {Energie}.
+
+\bibitem{belcic_wasted_2015}
+Larissa Belcic, Elizabeth Biney-Amissah, and Clementine Jang.
+\newblock Wasted, 2015.
 
 \bibitem{cotter_artist_2017}
 Holland Cotter.
@@ -252,6 +259,10 @@ Usman Haque.
 \newblock Notes on the {Design} of {Participatory} {Systems} -- for the {City}
   or for the {Planet}.
 \newblock Technical report, 2008.
+
+\bibitem{balkin_invisible5_2006}
+Amy Balkin, Kim Stringfellow, and Tim Halbur.
+\newblock invisible5: home, 2006.
 
 \bibitem{anya_schiffrin_can_2015}
 {Anya Schiffrin} and Ethan Zuckerman.
@@ -352,14 +363,14 @@ Seonghoon Hong, Richard~M. Adams, and H.~Alan Love.
 \newblock {\em Journal of Environmental Economics and Management},
   25(2):136--146, September 1993.
 
-\bibitem{darryl_dinn_recycling_2008}
-{Darryl Dinn}.
-\newblock Recycling with {Oscar} {The} {Grouch} \& {Darryl} {Dinn}, 2008.
-
 \bibitem{liboiron_power_2015}
 Max Liboiron.
 \newblock The {Power} {Behind} {Disposability}: {Why} {New} {York} {City}’s
   ban on polystyrene was vilified, sued, and reversed, September 2015.
+
+\bibitem{darryl_dinn_recycling_2008}
+{Darryl Dinn}.
+\newblock Recycling with {Oscar} {The} {Grouch} \& {Darryl} {Dinn}, 2008.
 
 \bibitem{goldstein_court_2018}
 Eric Goldstein.
@@ -376,6 +387,11 @@ Samantha MacBride.
 Maroš Krivý and Tahl Kaminer.
 \newblock The {Participatory} {Turn} in {Urbanism} ({Introduction}).
 \newblock {\em Footprint}, pages 1--6, 2013.
+
+\bibitem{lu_how_2019}
+Jacqueline Lu.
+\newblock How can we bring transparency to urban tech? {These} icons are a
+  first step., April 2019.
 
 \bibitem{mattern_sidewalk_2019}
 Shannon Mattern.
@@ -423,6 +439,10 @@ Michel Foucault.
 Charlie DeTar.
 \newblock Mapping the {Space} of {Location}-{Based} {Services}, 2011.
 
+\bibitem{umbrellium_voiceover_2016}
+Umbrellium.
+\newblock {VoiceOver}, 2016.
+
 \bibitem{mattern_local_2019}
 Shannon Mattern.
 \newblock Local {Codes}: {Forms} of {Spatial} {Knowledge}, 2019.
@@ -454,16 +474,16 @@ Colleen Macklin.
   for {Humanitarian} {Programs}}.
 \newblock {MA}, {International} {Affairs}, The New School, 2013.
 
-\bibitem{dunnigan_few_1969}
-Jim Dunnigan.
-\newblock A {Few} {Theoretical} {Remarks}.
-\newblock {\em Columbia Daily Spectator}, March 1969.
-
 \bibitem{landa_war_1991}
 Manuel~De Landa.
 \newblock {\em War in the age of intelligent machines}.
 \newblock Zone Books, 1991.
 \newblock Google-Books-ID: TZLfAAAAMAAJ.
+
+\bibitem{dunnigan_few_1969}
+Jim Dunnigan.
+\newblock A {Few} {Theoretical} {Remarks}.
+\newblock {\em Columbia Daily Spectator}, March 1969.
 
 \bibitem{buckminster_fuller_institute_about_nodate}
 Buckminster~Fuller Institute.
@@ -601,9 +621,18 @@ Daniel Lobo.
 Garbage {Incinerator} - {SimCity} {Wiki} - {SimCity} 5 {Community} {Wiki} and
   {Guide}, 2013.
 
+\bibitem{sterry_totalitarian_2010}
+Mike Sterry.
+\newblock The {Totalitarian} {Buddhist} {Who} {Beat} {Sim} {City}, May 2010.
+
 \bibitem{perlman_material_2016}
 Rachel Perlman and MIT~Office of~Sustainability.
 \newblock Material {Flow} {Analysis} {\textbar} {MIT} {Sustainability}, 2016.
+
+\bibitem{enevo_MIT_2018}
+Enevo.
+\newblock {MIT} {Waste} {Audit} {Data} {Summary}.
+\newblock Technical report, MIT, 2018.
 
 \bibitem{blleininger_english_2010}
 Adoption\_CLD gif: Original uploader was Apdevries at en
