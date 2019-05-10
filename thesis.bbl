@@ -4,11 +4,6 @@
 Mierle~Laderman Ukeles.
 \newblock Manifesto for {Maintenance} {Art} 1969!, 1969.
 
-\bibitem{onuoha_i_2016}
-Mimi Onuoha.
-\newblock I {Tried}, and {Failed}, to {Find} {Out} {Where} {My} {Electricity}
-  {Comes} {From}, February 2016.
-
 \bibitem{waste_business_journal_waste_2017}
 Waste~Business Journal.
 \newblock Waste {Generation}, {Recovery}, {Disposal} and {Pricing} {Report}
@@ -42,6 +37,11 @@ Oliver Milman.
 Casella.
 \newblock 2018 {SUSTAINABILITY} {REPORT}.
 \newblock Technical report, Casella Waste Systems, Inc, 2018.
+
+\bibitem{onuoha_i_2016}
+Mimi Onuoha.
+\newblock I {Tried}, and {Failed}, to {Find} {Out} {Where} {My} {Electricity}
+  {Comes} {From}, February 2016.
 
 \bibitem{rittel_dilemmas_1973}
 Horst W.~J. Rittel and Melvin~M. Webber.
@@ -306,19 +306,18 @@ Wilma~F. Strydom.
   {Behavior} in {South} {Africa}.
 \newblock {\em Recycling}, 3(3):43, September 2018.
 
-\bibitem{Hornik_determinants_1995}
+\bibitem{hornik_determinants_1995}
 Jacob Hornik, Joseph Cherian, Michelle Madansky, and Chem Narayana.
 \newblock Determinants of recycling behavior: {A} synthesis of research
   results.
 \newblock {\em The Journal of Socio-Economics}, 24(1):105--127, March 1995.
 
 \bibitem{kline_rationalizing_1988}
-Stephen Kline, Ont.) York University~(Toronto, and {Faculty of Environmental
-  Studies}.
+Stephen Kline.
 \newblock {\em Rationalizing attitude discrepant behaviour: a case study in
   energy attitudes}.
-\newblock Faculty of Environmental Studies, York University, North York, Ont.,
-  1988.
+\newblock Faculty of Environmental Studies, York University, York University
+  (Toronto, Ontario), 1988.
 \newblock OCLC: 222508980.
 
 \bibitem{aia_new_york_zero_2017}
@@ -338,14 +337,40 @@ Danielle~P. Smyth, Arthur~L. Fredeen, and Annie~L. Booth.
 \newblock {\em Resources, Conservation and Recycling}, 54(11):1007--1016,
   September 2010.
 
+\bibitem{us_epa_best_2016}
+OLEM US~EPA.
+\newblock Best {Practices} for {WasteWise} {Participants}, March 2016.
+
 \bibitem{zero_waste_international_alliance_zero_2017}
 Zero Waste~International Alliance.
 \newblock Zero {Waste}, 2017.
 
-\bibitem{price_technology_1979}
-Cedric Price.
-\newblock Technology {Is} {The} {Answer} {But} {What} {Was} {The} {Question}?,
-  1979.
+\bibitem{hong_economic_1993}
+Seonghoon Hong, Richard~M. Adams, and H.~Alan Love.
+\newblock An {Economic} {Analysis} of {Household} {Recycling} of {Solid}
+  {Wastes}: {The} {Case} of {Portland}, {Oregon}.
+\newblock {\em Journal of Environmental Economics and Management},
+  25(2):136--146, September 1993.
+
+\bibitem{darryl_dinn_recycling_2008}
+{Darryl Dinn}.
+\newblock Recycling with {Oscar} {The} {Grouch} \& {Darryl} {Dinn}, 2008.
+
+\bibitem{liboiron_power_2015}
+Max Liboiron.
+\newblock The {Power} {Behind} {Disposability}: {Why} {New} {York} {City}’s
+  ban on polystyrene was vilified, sued, and reversed, September 2015.
+
+\bibitem{goldstein_court_2018}
+Eric Goldstein.
+\newblock Court {Upholds} {NYC} {Ban} on {Polystyrene} {Containers}, 2018.
+
+\bibitem{macbride_recycling_2011}
+Samantha MacBride.
+\newblock {\em Recycling {Reconsidered}: {The} {Present} {Failure} and {Future}
+  {Promise} of {Environmental} {Action} in the {United} {States}}.
+\newblock MIT Press, December 2011.
+\newblock Google-Books-ID: 4N7XEE6xb9IC.
 
 \bibitem{krivy_participatory_2013}
 Maroš Krivý and Tahl Kaminer.
@@ -372,7 +397,7 @@ Crystal Tremblay, Jutta Gutberlet, and Ana~Maria Peredo.
 Thiago Mundano.
 \newblock Pimp my {Carroça}.
 
-\bibitem{Gabrys_programming_2014}
+\bibitem{gabrys_programming_2014}
 Jennifer Gabrys.
 \newblock Programming {Environments}: {Environmentality} and {Citizen}
   {Sensing} in the {Smart} {City}.
@@ -429,6 +454,11 @@ Colleen Macklin.
   for {Humanitarian} {Programs}}.
 \newblock {MA}, {International} {Affairs}, The New School, 2013.
 
+\bibitem{dunnigan_few_1969}
+Jim Dunnigan.
+\newblock A {Few} {Theoretical} {Remarks}.
+\newblock {\em Columbia Daily Spectator}, March 1969.
+
 \bibitem{landa_war_1991}
 Manuel~De Landa.
 \newblock {\em War in the age of intelligent machines}.
@@ -442,11 +472,6 @@ Buckminster~Fuller Institute.
 \bibitem{johnson_inside_2013}
 Jason Johnson.
 \newblock Inside the failed, utopian {New} {Games} {Movement}, October 2013.
-
-\bibitem{dunnigan_few_1969}
-Jim Dunnigan.
-\newblock A {Few} {Theoretical} {Remarks}.
-\newblock {\em Columbia Daily Spectator}, March 1969.
 
 \bibitem{sterman_john_2013}
 John Sterman.
@@ -492,6 +517,21 @@ Josh Lerner.
 \newblock MIT Press, February 2014.
 \newblock Google-Books-ID: 5efaAgAAQBAJ.
 
+\bibitem{price_technology_1979}
+Cedric Price.
+\newblock Technology {Is} {The} {Answer} {But} {What} {Was} {The} {Question}?,
+  1979.
+
+\bibitem{molleindustria_mcdonalds_2006}
+molleindustria.
+\newblock {McDonald}'s {Video} game, 2006.
+
+\bibitem{bogost_rhetoric_2008}
+Ian Bogost.
+\newblock The {Rhetoric} of {Video} {Games}.
+\newblock {\em The Ecology of Games: Connecting Youth, Games, and Learning},
+  page~23, 2008.
+
 \bibitem{lantz_universal_2017}
 Frank Lantz.
 \newblock Universal {Paperclips}, 2017.
@@ -499,6 +539,10 @@ Frank Lantz.
 \bibitem{tseng_founder_2017}
 Francis Tseng.
 \newblock The {Founder}, 2017.
+
+\bibitem{molleindustria_nova_2016}
+Molleindustria.
+\newblock Nova {Alea}, 2016.
 
 \bibitem{tseng_founder_2017-1}
 Francis Tseng and Vicky Osterweil.
@@ -561,10 +605,6 @@ Garbage {Incinerator} - {SimCity} {Wiki} - {SimCity} 5 {Community} {Wiki} and
 Rachel Perlman and MIT~Office of~Sustainability.
 \newblock Material {Flow} {Analysis} {\textbar} {MIT} {Sustainability}, 2016.
 
-\bibitem{case_loopy!_2017}
-Nicky Case.
-\newblock {LOOPY}!, 2017.
-
 \bibitem{blleininger_english_2010}
 Adoption\_CLD gif: Original uploader was Apdevries at en
   wikipediaderivative~work: Blleininger.
@@ -573,6 +613,10 @@ Adoption\_CLD gif: Original uploader was Apdevries at en
   en:{John} {Sterman} (2001) {Systems} dynamics modeling: tools for learning in
   a complex world, {California} management review, {Vol} 43 no 1, {Summer}
   2001, February 2010.
+
+\bibitem{case_loopy!_2017}
+Nicky Case.
+\newblock {LOOPY}!, 2017.
 
 \bibitem{noauthor_vensim_nodate}
 Vensim.
